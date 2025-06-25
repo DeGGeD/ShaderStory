@@ -5,15 +5,15 @@
 
 **Shader Story** is a free, open educational resource exploring **real-time graphics**, **shader programming**, and **technical art techniques**.
 
-This is a **side project of [Decompiled Art](https://www.youtube.com/@DecompiledArt)** — a broader initiative focused on deep-dive tutorials, shader analysis, rendering pipelines, and graphics programming tools. Shader Story brings those same insights into an **open-source**, **accessible format** — built for **learning**, **reference**, and **hands-on experimentation**.
+This is a **side project of [Decompiled Art](https://www.youtube.com/@DecompiledArt)** — a broader initiative focused on deep-dive tutorials, rendering pipelines and graphics programming tools. Shader Story brings those same insights into an **open-source**, **accessible format** — built for **learning**, **reference**, and **hands-on experimentation**.
 
 ---
 
-## 🔗 Quick Links
+## Quick Links
 
 - [📘 About Shader Story](#shader-story-a-journey-into-shaders-and-graphics-programming)
-- [🌐 Decompiled Art (Parent Project)](#about-decompiled-art)
-- [📚 Shader Library Contents](#shader-library-contents)
+- [🌐 About Decompiled Art ](#about-decompiled-art)
+- [📚 Library Contents](#library-contents)
 - [⚙️ Usage & Requirements](#usage--requirements)
 - [❤️ Support the Project](#support-the-project)
 - [🪪 License](#license)
@@ -21,7 +21,7 @@ This is a **side project of [Decompiled Art](https://www.youtube.com/@Decompiled
 
 ---
 
-## 🧠 About Decompiled Art
+## About Decompiled Art
 
 **[Decompiled Art](https://www.youtube.com/@DecompiledArt)** is a knowledge-sharing initiative by a team with 13+ years in game development, graphics programming, and technical art. It focuses on:
 
@@ -34,9 +34,7 @@ We aim to inspire, teach, and empower developers, artists, and technical creator
 
 ---
 
-## 📚 Shader Library Contents
-
-This repository includes free shaders, reference articles, and technique breakdowns. Here's what's inside (and what’s coming):
+## 📚 Library Contents
 
 ### 🔹 Shader Basics
 - ✅ [Simple Color Shader](link)
@@ -62,8 +60,6 @@ These shaders are designed to be used with:
 - **Unity 6+**
 - **Universal Render Pipeline (URP 17+)**
 
-Code is heavily commented for educational purposes.
-
 ---
 
 ## 💡 Support the Project
@@ -76,7 +72,7 @@ If you find **Shader Story** helpful or inspiring, consider supporting future de
 
 Your support helps expand the library, fund new tutorials, and keep this resource free for everyone.
 
-🎬 Follow the Shader Story — and bring your visual ideas to life, one pixel at a time.
+Follow the Shader Story to bring your visual ideas to life, one pixel at a time!
 
 ---
 
