@@ -5,32 +5,18 @@
 
 **Shader Story** is an open educational resource exploring **real-time graphics**, **shader programming**, and **technical art techniques**.
 
-This is a **side project of [Decompiled Art](https://www.youtube.com/@DecompiledArt)** — a broader initiative focused on deep-dive tutorials, rendering pipelines and graphics programming tools. Shader Story brings those same insights into an **open-source**, **accessible format** — built for **learning**, **reference**, and **hands-on experimentation**.
+This is a **side project of [Decompiled Art](https://www.youtube.com/@DecompiledArt)** — a broader initiative focused on deep-dive tutorials, rendering pipelines and graphics programming tools. Shader Story brings those same insights into an **accessible format** — built for **learning**, **reference**, and **hands-on experimentation**. Main goal is to inspire and empower developers, artists, and technical creators.
 
 ---
 
 ## Quick Links
 
 - 📘 [About Shader Story](#shader-story-a-journey-into-shaders-and-graphics-programming)
-- 🌐 [About Decompiled Art](#about-decompiled-art)
 - 📚 [Library Contents](#library-contents)
 - ⚙️ [Usage & Requirements](#usage--requirements)
 - ❤️ [Support the Project](#support-the-project)
 - 🪪 [License](#license)
 - 👥 [Credits & Contact](#credits--contact)
-
----
-
-## About Decompiled Art
-
-**[Decompiled Art](https://www.youtube.com/@DecompiledArt)** is a knowledge-sharing initiative by a team with 13+ years in game development, graphics programming, and technical art. It focuses on:
-
-- 🔬 Shader deconstruction & real-time VFX techniques  
-- 📚 Advanced rendering and graphics programming insights  
-- 🎮 Game rendering workflows, pipelines, and optimization  
-- 🧰 ML/AI-assisted creative tooling *(in progress)*  
-
-We aim to inspire, teach, and empower developers, artists, and technical creators.
 
 ---
 
@@ -58,8 +44,8 @@ We aim to inspire, teach, and empower developers, artists, and technical creator
 
 These shaders are designed to be used with:
 
-- **Unity 6+**
-- **Universal Render Pipeline (URP 17+)**
+- **Unity: 6.0**
+- **Universal Render Pipeline: 17.0**
 
 ---
 
