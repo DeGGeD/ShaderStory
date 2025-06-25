@@ -34,7 +34,7 @@ We aim to inspire, teach, and empower developers, artists, and technical creator
 
 ---
 
-## 📚 Library Contents
+## Library Contents
 
 ### 🔹 Shader Basics
 - ✅ [Simple Color Shader](link)
@@ -53,7 +53,7 @@ We aim to inspire, teach, and empower developers, artists, and technical creator
 
 ---
 
-## ⚙️ Usage & Requirements
+## Usage & Requirements
 
 These shaders are designed to be used with:
 
@@ -62,7 +62,7 @@ These shaders are designed to be used with:
 
 ---
 
-## 💡 Support the Project
+## Support the Project
 
 If you find **Shader Story** helpful or inspiring, consider supporting future development through:
 
@@ -76,7 +76,7 @@ Follow the Shader Story to bring your visual ideas to life, one pixel at a time!
 
 ---
 
-## 🪪 License
+## License
 
 📄 Licensed under **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
 
@@ -93,7 +93,7 @@ But:
 
 ---
 
-## 👥 Credits & Contact
+## Credits & Contact
 
 Created by [Decompiled Art](https://www.youtube.com/@DecompiledArt)  
 For questions, ideas, or collaborations, reach out via GitHub or email: **fridrian@gmail.com**
