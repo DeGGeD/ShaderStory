@@ -7,13 +7,13 @@
 
 ```hlsl
 float step(float edge, float x);
+```
+
 
 ### URP Shader Code
-
 Shader applies step() on the horizontal UV axis.
 
-```c
-// ...
+```hlsl
 
 Shader "DecompiledArt/CommonFunctions/Step/Step"
 {
@@ -70,5 +70,4 @@ Shader "DecompiledArt/CommonFunctions/Step/Step"
         }
     }
 }
-
-// ...
+```
