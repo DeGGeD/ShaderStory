@@ -65,7 +65,7 @@ Follow the Shader Story to bring your visual ideas to life, one pixel at a time!
 
 ## License
 
-📄 Licensed under **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
+Licensed under **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
 
 You are free to:
 - ✅ **Use**, **modify**, and **share** for **non-commercial educational** purposes.
@@ -74,16 +74,15 @@ You are free to:
 But:
 - ❌ **Commercial use is not allowed** — including in games, products, asset stores, tools, or monetized media.
 - ✅ **Attribution required** — please link back to this repository and credit the author.
-
-🔒 For commercial licensing or partnership inquiries: **fridrian@gmail.com**  
-🔗 [Full License Info](https://creativecommons.org/licenses/by-nc/4.0/)
+  
+[Full License Info](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ---
 
 ## Credits & Contact
 
 Created by [Decompiled Art](https://www.youtube.com/@DecompiledArt)  
-For questions, ideas, or collaborations, reach out via GitHub or email: **fridrian@gmail.com**
+For commercial licensing, questions or partnership inquiries: **fridrian@gmail.com**
 
 ---
 
