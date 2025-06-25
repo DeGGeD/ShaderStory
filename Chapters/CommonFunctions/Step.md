@@ -71,3 +71,8 @@ Shader "DecompiledArt/CommonFunctions/Step/Step"
     }
 }
 ```
+
+### URP Shader graph
+<p align="center">
+<img src="Resources/Images/Chapters/CommonFunctions/Step/DA_CommonFuncs_Step_Graph_01.png" alt="Lighting" title="Step: Graph">
+</p>
