@@ -38,7 +38,7 @@ We aim to inspire, teach, and empower developers, artists, and technical creator
 > More articles and categories are in development — stay tuned and ⭐ star the repo!
 
 ### Common HLSL functions
-- [Step](link)
+- [Step](https://github.com/DeGGeD/ShaderStory/edit/main/Chapters/CommonFunctions/Step.md)
 - Smoothstep
 - Min/Max
 - Remap
