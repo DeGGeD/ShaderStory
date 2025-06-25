@@ -10,8 +10,10 @@ float step(float edge, float x);
 ```
 
 
+### Sample 
+This shader applies step() to the horizontal UV axis, creating a crisp vertical cutoff.
+
 ### URP Shader Code
-Shader applies step() on the horizontal UV axis.
 
 ```hlsl
 
@@ -74,5 +76,5 @@ Shader "DecompiledArt/CommonFunctions/Step/Step"
 
 ### URP Shader graph
 <p align="center">
-<img src="Resources/Images/Chapters/CommonFunctions/Step/DA_CommonFuncs_Step_Graph_01.png" alt="Lighting" title="Step: Graph">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/CommonFunctions/Step/DA_CommonFuncs_Step_Graph_01.png" alt="Shader Story: Shader Step" title="Shader Story: Shader Step">
 </p>
