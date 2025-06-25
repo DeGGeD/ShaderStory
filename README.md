@@ -3,7 +3,7 @@
 > “When love and skill work together, expect a masterpiece.”  
 > — *John Ruskin*
 
-**Shader Story** is a free, open educational resource exploring **real-time graphics**, **shader programming**, and **technical art techniques**.
+**Shader Story** is an open educational resource exploring **real-time graphics**, **shader programming**, and **technical art techniques**.
 
 This is a **side project of [Decompiled Art](https://www.youtube.com/@DecompiledArt)** — a broader initiative focused on deep-dive tutorials, rendering pipelines and graphics programming tools. Shader Story brings those same insights into an **open-source**, **accessible format** — built for **learning**, **reference**, and **hands-on experimentation**.
 
@@ -35,11 +35,19 @@ We aim to inspire, teach, and empower developers, artists, and technical creator
 ---
 
 ## Library Contents
+> More articles and categories are in development — stay tuned and ⭐ star the repo!
 
-### 🔹 Shader Basics
-- ✅ [Simple Color Shader](link)
-- ✅ [Show UVs](link)
-- ✅ [Texture Tinter](link)
+### Common HLSL functions
+- [Step](link)
+- Smoothstep
+- Min/Max
+- Remap
+- Frac
+- Negate
+- Floor/Ceil/Map
+- SinCos samples:
+  - ⏳[Blink]()
+  - ⏳[Pattern: Grid]()
 
 ### 🔹 Porting Guides
 - ✅ [Porting Built-in → URP: Starter Guide](link)
@@ -49,7 +57,7 @@ We aim to inspire, teach, and empower developers, artists, and technical creator
 - ✅ [UV Tiling with `frac`](link)
 - ✅ [Remap functions explained](link)
 
-> More effects and categories are in development — stay tuned and ⭐ star the repo!
+
 
 ---
 
@@ -66,8 +74,8 @@ These shaders are designed to be used with:
 
 If you find **Shader Story** helpful or inspiring, consider supporting future development through:
 
-- **[Patreon]()**
-- **[Ko-fi]()**
+- **[Patreon](https://www.patreon.com/decompiled_art)**
+- **[Ko-fi](https://ko-fi.com/decompiled_art)**
 - **[GitHub Sponsors]()** _(coming soon)_
 
 Your support helps expand the library, fund new tutorials, and keep this resource free for everyone.
