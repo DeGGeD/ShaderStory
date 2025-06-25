@@ -11,13 +11,13 @@ This is a **side project of [Decompiled Art](https://www.youtube.com/@Decompiled
 
 ## Quick Links
 
-- [📘 About Shader Story](#shader-story-a-journey-into-shaders-and-graphics-programming)
-- [🌐 About Decompiled Art ](#about-decompiled-art)
-- [📚 Library Contents](#library-contents)
-- [⚙️ Usage & Requirements](#usage--requirements)
-- [❤️ Support the Project](#support-the-project)
-- [🪪 License](#license)
-- [👥 Credits & Contact](#credits--contact)
+- 📘 [About Shader Story](#shader-story-a-journey-into-shaders-and-graphics-programming)
+- 🌐 [About Decompiled Art](#about-decompiled-art)
+- 📚 [Library Contents](#library-contents)
+- ⚙️ [Usage & Requirements](#usage--requirements)
+- ❤️ [Support the Project](#support-the-project)
+- 🪪 [License](#license)
+- 👥 [Credits & Contact](#credits--contact)
 
 ---
 
