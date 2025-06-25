@@ -38,7 +38,7 @@ We aim to inspire, teach, and empower developers, artists, and technical creator
 > More articles and categories are in development — stay tuned and ⭐ star the repo!
 
 ### Common HLSL functions
-- [Step](https://github.com/DeGGeD/ShaderStory/edit/main/Chapters/CommonFunctions/Step.md)
+- [Step](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Step.md)
 - Smoothstep
 - Min/Max
 - Remap
@@ -51,13 +51,6 @@ We aim to inspire, teach, and empower developers, artists, and technical creator
 
 ### 🔹 Porting Guides
 - ✅ [Porting Built-in → URP: Starter Guide](link)
-
-### 🔹 Math Functions & Effects
-- ✅ [`min()` and `max()` usage](link)
-- ✅ [UV Tiling with `frac`](link)
-- ✅ [Remap functions explained](link)
-
-
 
 ---
 
