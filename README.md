@@ -25,18 +25,15 @@ This is a **side project of [Decompiled Art](https://www.youtube.com/@Decompiled
 
 ### Common HLSL functions
 - [Step](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Step.md)
-- Smoothstep
+- [Smoothstep](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Smoothstep.md)
 - Min/Max
 - Remap
 - Frac
 - Negate
 - Floor/Ceil/Map
 - SinCos samples:
-  - ⏳[Blink]()
-  - ⏳[Pattern: Grid]()
-
-### 🔹 Porting Guides
-- ✅ [Porting Built-in → URP: Starter Guide](link)
+  - Blink
+  - Pattern: Grid
 
 ---
 
