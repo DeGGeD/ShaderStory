@@ -9,7 +9,7 @@
 float step(float edge, float x);
 ```
 
-### Sample 
+### Visual demo
 This shader applies step() to the horizontal UV axis, creating a crisp vertical cutoff.
 
 <p align="center">
