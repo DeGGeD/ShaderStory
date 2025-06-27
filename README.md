@@ -50,9 +50,8 @@ These shaders are designed to be used with:
 
 If you find **Shader Story** helpful or inspiring, consider supporting future development through:
 
-- **[Patreon](https://www.patreon.com/decompiled_art)**
-- **[Ko-fi](https://ko-fi.com/decompiled_art)**
-- **[GitHub Sponsors]()** _(coming soon)_
+[![Ko-fi](https://img.shields.io/badge/Support%20on-Ko--fi-red?logo=ko-fi)](https://ko-fi.com/decompiled_art)
+[![Patreon](https://img.shields.io/badge/Support%20on-Patreon-orange?logo=patreon)](https://www.patreon.com/decompiled_art)
 
 Your support helps expand the library, fund new tutorials, and keep this resource free for everyone.
 
