@@ -17,7 +17,7 @@ It demonstrates how values are limited based on shader input.
 
 ---
 <p align="center">
-<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/CommonFunctions/Step/DA_CommonFuncs_MinMax_Demo_01.gif" alt="Shader Story: Functions - Min/Max" title="Shader Story: Functions - Min/Max">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/CommonFunctions/MinMax/DA_CommonFuncs_MinMax_Demo_01.gif" alt="Shader Story: Functions - Min/Max" title="Shader Story: Functions - Min/Max">
 </p>
 
 ### URP Shader Code
