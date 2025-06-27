@@ -87,5 +87,16 @@ Shader "DecompiledArt/CommonFunctions/Smoothstep/Smoothstep"
 
 ### URP Shader graph
 <p align="center">
-<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/CommonFunctions/Step/DA_CommonFuncs_Step_Graph_01.png" alt="Shader Story: Function - Smoothstep" title="Shader Story: Function - Smoothstep">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/CommonFunctions/Smoothstep/DA_CommonFuncs_Smoothstep_Graph_01.png" alt="Shader Story: Function - Smoothstep" title="Shader Story: Function - Smoothstep">
 </p>
+
+---
+
+## ❤️ Support Shader Story
+
+If this article helped you, consider supporting the project:
+
+[![Ko-fi](https://img.shields.io/badge/Support%20on-Ko--fi-red?logo=ko-fi)](https://ko-fi.com/decompiled_art)
+[![Patreon](https://img.shields.io/badge/Support%20on-Patreon-orange?logo=patreon)](https://www.patreon.com/decompiled_art)
+
+Your support helps keep this library open, growing, and free for everyone.
