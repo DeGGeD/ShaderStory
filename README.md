@@ -55,8 +55,6 @@ If you find **Shader Story** helpful or inspiring, consider supporting future de
 
 Your support helps expand the library, fund new tutorials, and keep this resource free for everyone.
 
-Follow the Shader Story to bring your visual ideas to life, one pixel at a time!
-
 ---
 
 ## License
