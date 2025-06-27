@@ -89,6 +89,3 @@ Shader "DecompiledArt/CommonFunctions/Smoothstep/Smoothstep"
 <p align="center">
 <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/CommonFunctions/Step/DA_CommonFuncs_Step_Graph_01.png" alt="Shader Story: Function - Smoothstep" title="Shader Story: Function - Smoothstep">
 </p>
-
-
-#Unity #URP #HLSL #smoothstep #shaders #shadergraph #graphics-programming
