@@ -15,7 +15,7 @@ float smoothstep(float edge_01_, float edge_02_, float x);
 This example uses smoothstep() across the horizontal UV axis, producing a smooth vertical blend between two colors.
 
 <p align="center">
-<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/CommonFunctions/Step/DA_CommonFuncs_Step_Demo_01.gif" alt="Shader Story: Function - Smoothstep" title="Shader Story: Function - Smoothstep">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/CommonFunctions/Smoothstep/DA_CommonFuncs_Smoothstep_Demo_01.gif" alt="Shader Story: Function - Smoothstep" title="Shader Story: Function - Smoothstep">
 </p>
 
 ---
