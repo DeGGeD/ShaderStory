@@ -27,7 +27,7 @@ This is a **side project of [Decompiled Art](https://www.youtube.com/@Decompiled
 - [Step](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Step.md)
 - [Smoothstep](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Smoothstep.md)
 - [Min/Max](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/MinMax.md)
-- Remap
+- [Remap](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Remap.md)
 - Frac
 - Negate
 - Floor/Ceil/Map
