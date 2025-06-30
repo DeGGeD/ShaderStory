@@ -84,14 +84,14 @@ Shader "DecompiledArt/CommonFunctions/Frac/Frac"
 
 ### URP Shader graph
 <p align="center">
-<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/CommonFunctions/Smoothstep/DA_CommonFuncs_Frac_Graph_01.png" alt="Shader Story: Function - Frac" title="Shader Story: Function - Frac">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/CommonFunctions/Frac/DA_CommonFuncs_Frac_Graph_01.png" alt="Shader Story: Function - Frac" title="Shader Story: Function - Frac">
 </p>
 
 ---
 
 ## 🔗 Related Functions
 
-[Step]([../Step.md](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Step.md)) • [Remap](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Remap.md)
+[Step]([../Step.md](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Step.md)) • [Remap](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Remap.md) • [Smoothstep](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Smoothstep.md)
 
 ---
 
