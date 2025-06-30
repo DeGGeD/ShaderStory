@@ -2,17 +2,20 @@
 
 ## Common HLSL Functions: Frac
 
-> `smoothstep(edge_01, edge_02, x)` returns a smooth Hermite interpolation between `0.0` and `1.0`, based on the value of `x` within the `[edge_01, edge_02]` range. 
->  It’s perfect for **soft transitions**, **anti-aliased masks**, **gradients**, and **stylized blending**.
+> `frac(x)` returns the **fractional (non-integer) part** of a value.  
+> It’s often used for **tiling UVs**, **procedural animation**, **pattern looping**, and **modular effects**.
 
 ```hlsl
-float smoothstep(float edge_01_, float edge_02_, float x);
+float frac(float x);
+float2 frac(float2 x);
+float3 frac(float3 x);
+...
 ```
 
 ---
 
 ### Visual demo 
-This example uses smoothstep() across the horizontal UV axis, producing a smooth vertical blend between two colors.
+This shader uses frac() to wrap the UV coordinates repeatedly based on a tiling multiplier, creating a looping pattern.
 
 <p align="center">
 <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/CommonFunctions/Frac/DA_CommonFuncs_Frac_Demo_01.gif" alt="Shader Story: Function - Frac" title="Shader Story: Function - Frac">
@@ -23,14 +26,11 @@ This example uses smoothstep() across the horizontal UV axis, producing a smooth
 
 ```hlsl
 
-Shader "DecompiledArt/CommonFunctions/Smoothstep/Smoothstep"
+Shader "DecompiledArt/CommonFunctions/Frac/Frac"
 {
     Properties
     {
-        _Tint01("Tint01", Color) = (1,1,1,1)
-        _Tint02("Tint02", Color) = (1,1,1,1)
-        _StepEdgeStart("StepEdgeStart", Range(0.0 ,1.0)) = 1.0
-        _StepEdgeEnd("StepEdgeEnd", Range(0.0 ,1.0)) = 1.0
+        _UVTile("UVTile", Range(0.5, 10.0)) = 1.0
     }
 
     SubShader
@@ -58,10 +58,7 @@ Shader "DecompiledArt/CommonFunctions/Smoothstep/Smoothstep"
             };
 
             CBUFFER_START(UnityPerMaterial)
-            half4 _Tint01;
-            half4 _Tint02;
-            half _StepEdgeStart;
-            half _StepEdgeEnd;
+            half _UVTile;
             CBUFFER_END
 
             Varyings vert (Attributes IN)
@@ -75,17 +72,14 @@ Shader "DecompiledArt/CommonFunctions/Smoothstep/Smoothstep"
 
             half4 frag(Varyings i) : SV_Target
             {
-                half edge_step = smoothstep(_StepEdgeStart, _StepEdgeEnd, i.uvs.x);
-
-                half3 col_smoothstep = lerp(_Tint01.xyz, _Tint02.xyz, edge_step);
-                half4 col_output = half4(col_smoothstep, 1.0);
-                return col_output;
+                return half4(frac(i.uvs * _UVTile), 0.0, 1.0);
             }
 
             ENDHLSL
         }
     }
 }
+
 ```
 
 ### URP Shader graph
