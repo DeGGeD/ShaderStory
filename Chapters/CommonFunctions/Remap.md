@@ -112,7 +112,7 @@ Shader "DecompiledArt/CommonFunctions/Remap/Remap"
 ---
 ## 🔗 Related Functions
 
-[Step →](../Step.md) • [Smoothstep →](../Smoothstep.md) • [Clamp →](../Clamp.md) • [Lerp →](../Lerp.md)
+[Step]([../Step.md](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Step.md)) • [Smoothstep]([../Smoothstep.md](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Smoothstep.md))
 
 ---
 
@@ -120,6 +120,10 @@ Shader "DecompiledArt/CommonFunctions/Remap/Remap"
 
 If this article helped you, consider supporting the project:
 
-[![Patreon](https://img.shields.io/badge/Support%20on-Patreon-orange?logo=patreon)](https://www.patreon.com/decompiled_art)
+<p align="center">
+  <a href="https://www.patreon.com/decompiled_art" target="_blank">
+    <img src="https://img.shields.io/badge/Join%20on%20Patreon-%20Exclusive%20Updates%20%26%20Community-orange?style=for-the-badge&logo=patreon" alt="Join on Patreon">
+  </a>
+</p>
 
 Your support helps keep this library open, growing, and free for everyone.

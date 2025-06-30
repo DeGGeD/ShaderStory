@@ -27,7 +27,7 @@ This is a **side project of [Decompiled Art](https://www.youtube.com/@Decompiled
 - [Step](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Step.md)
 - [Smoothstep](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Smoothstep.md)
 - [Min/Max](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/MinMax.md)
-- Remap
+- [Remap](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Remap.md)
 - Frac
 - Negate
 - Floor/Ceil/Map
@@ -46,14 +46,19 @@ These shaders are designed to be used with:
 
 ---
 
-## Support the Project
+## ❤️ Support the Project
 
-If you find **Shader Story** helpful or inspiring, consider supporting future development through:
+If you find **Shader Story** helpful or inspiring, consider supporting its future through:
 
-[![Ko-fi](https://img.shields.io/badge/Support%20on-Ko--fi-red?logo=ko-fi)](https://ko-fi.com/decompiled_art)
-[![Patreon](https://img.shields.io/badge/Support%20on-Patreon-orange?logo=patreon)](https://www.patreon.com/decompiled_art)
+<br>
+<p align="center">
+  <a href="https://www.patreon.com/decompiled_art" target="_blank">
+    <img src="https://img.shields.io/badge/Join%20on%20Patreon-%20Exclusive%20Updates%20%26%20Community-orange?style=for-the-badge&logo=patreon" alt="Join on Patreon">
+  </a>
+</p>
 
-Your support helps expand the library, fund new tutorials, and keep this resource free for everyone.
+By joining on Patreon, you’ll receive early updates, shader breakdowns, and dev insights —  
+while helping keep Shader Story open and growing.
 
 ---
 
