@@ -31,10 +31,11 @@ This is a **side project of [Decompiled Art](https://www.youtube.com/@Decompiled
 - [Remap](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Remap.md)
 - [Frac](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Frac.md)
 - [Negate](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Negate.md)
-- Floor/Ceil/Map
+- [Floor/Ceil](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/FloorCeil.md)
 - SinCos samples:
   - Blink
   - Pattern: Grid
+- Power
 
 ---
 
