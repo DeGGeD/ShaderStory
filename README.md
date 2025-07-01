@@ -35,7 +35,7 @@ This is a **side project of [Decompiled Art](https://www.youtube.com/@Decompiled
 - SinCos samples:
   - Blink
   - Pattern: Grid
-- Power
+- [Power](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Power.md)
 
 ---
 
