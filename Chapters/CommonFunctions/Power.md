@@ -17,8 +17,9 @@ float3 result = pow(float3(x, y, z), 2.0);
 This shader visualizes the pow() function by remapping a horizontal UV gradient.
 The power exponent reshapes the curve:
 
-values < 1 bend it upward (fast rise)
-values > 1 bend it downward (slow rise)
+- values < 1 bend it upward (fast rise)
+- values > 1 bend it downward (slow rise)
+  
 useful for biasing interpolation or nonlinear fading.
 
 <p align="center">
