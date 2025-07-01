@@ -30,7 +30,7 @@ This is a **side project of [Decompiled Art](https://www.youtube.com/@Decompiled
 - [Min/Max](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/MinMax.md)
 - [Remap](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Remap.md)
 - [Frac](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Frac.md)
-- Negate
+- [Negate](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Negate.md)
 - Floor/Ceil/Map
 - SinCos samples:
   - Blink
