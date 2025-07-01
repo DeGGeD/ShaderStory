@@ -50,7 +50,7 @@ These shaders are designed to be used with:
 
 ## ❤️ Support the Project
 
-If you find **Shader Story** helpful or inspiring, consider supporting its future through:
+If you find **Shader Story** helpful or inspiring, consider supporting it through:
 
 <br>
 <p align="center">
@@ -58,9 +58,6 @@ If you find **Shader Story** helpful or inspiring, consider supporting its futur
     <img src="https://img.shields.io/badge/Join%20on%20Patreon-%20Exclusive%20Updates%20%26%20Community-orange?style=for-the-badge&logo=patreon" alt="Join on Patreon">
   </a>
 </p>
-
-By joining on Patreon, you’ll receive early updates, shader breakdowns, and dev insights —  
-while helping keep Shader Story open and growing.
 
 ---
 
