@@ -5,7 +5,7 @@
 
 **Shader Story** is an open educational resource exploring **real-time graphics**, **shader programming**, and **technical art techniques**.
 
-This is a **side project of [Decompiled Art](https://www.youtube.com/@DecompiledArt)** — a broader initiative focused on deep-dive tutorials, rendering pipelines and graphics programming tools. Shader Story brings those same insights into an **accessible format** — built for **learning**, **reference**, and **hands-on experimentation**. Main goal is to inspire and empower developers, artists, and technical creators.
+This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_art)** — a broader initiative focused on deep-dive tutorials, rendering pipelines and graphics programming tools. Shader Story brings those same insights into an **accessible format** — built for **learning**, **reference**, and **hands-on experimentation**. Main goal is to inspire and empower developers, artists, and technical creators.
 
 ---
 
