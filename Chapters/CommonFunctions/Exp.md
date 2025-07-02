@@ -9,6 +9,7 @@
 ```hlsl
 float exp_result = exp(x);   // e^x
 float exp2_result = exp2(x); // 2^x
+```
 ---
 
 ### Visual demo 
