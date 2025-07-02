@@ -32,6 +32,7 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 - [Frac](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Frac.md)
 - [Negate](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Negate.md)
 - [Floor/Ceil](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/FloorCeil.md)
+- [Exp](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Exp.md)
 - Sin/Cos:
   - Blink
   - Pattern: Grid
