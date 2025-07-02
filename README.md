@@ -32,7 +32,7 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 - [Frac](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Frac.md)
 - [Negate](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Negate.md)
 - [Floor/Ceil](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/FloorCeil.md)
-- SinCos samples:
+- Sin/Cos:
   - Blink
   - Pattern: Grid
 - [Power](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Power.md)
@@ -41,7 +41,7 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 
 ## Usage & Requirements
 
-These shaders are designed to be used with:
+Published resources are compatible anddesigned to be used with:
 
 - **Unity: 6.0**
 - **Universal Render Pipeline: 17.0**
