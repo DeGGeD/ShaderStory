@@ -41,7 +41,7 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 
 ## Usage & Requirements
 
-Published resources are compatible anddesigned to be used with:
+Published resources are compatible and designed to be used with:
 
 - **Unity: 6.0**
 - **Universal Render Pipeline: 17.0**
