@@ -36,6 +36,7 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 - [Sqrt](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Sqrt.md)
 - [Sine/Cosine](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/SineCosine.md)
 - [Power](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Power.md)
+- [Lerp](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Lerp.md)
 
 ---
 
