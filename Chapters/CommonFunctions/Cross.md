@@ -4,6 +4,7 @@
 
 > cross(a, b) returns a vector that is perpendicular to both input vectors a and b, oriented according to the right-hand rule.
 Note that the order of inputs matters. cross(a, b) is not the same as cross(b, a), as demonstrated in the visual demo.
+> 
 > It’s essential for calculating **surface tangents**, **bitangents**, **normal maps**, and various geometric operations in shaders.
 
 ```hlsl
