@@ -47,7 +47,6 @@ Shader "DecompiledArt/CommonFunctions/Cross/Cross"
             {
                 float4 positionOS : POSITION;
                 half3 normalOS   : NORMAL;
-                half4 tangentOS  : TANGENT;
             };
 
             struct Varyings
