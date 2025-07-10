@@ -46,6 +46,7 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 ### Derivatives
 - [Harden Normals](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Derivatives/HardenNormals.md)
 - [Edge Transition](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Derivatives/EdgeTransition.md)
+- [Silhouette](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Derivatives/Silhouette.md)
 
 
 ---
