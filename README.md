@@ -43,6 +43,10 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 - [Length](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Length.md)
 - [Distance](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Distance.md)
 
+### Derivatives
+- [Harden Normals](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Derivatives/HardenNormals.md)
+
+
 ---
 
 ## Usage & Requirements
