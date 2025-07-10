@@ -48,14 +48,13 @@ Shader "DecompiledArt/Derivatives/Silhouette/Silhouette"
             {
                 float4 positionOS : POSITION;
                 float3 normalOS : NORMAL;
-                half2 uvs : TEXCOORD0;
             };
 
             struct Varyings
             {
                 float4 positionHCS : SV_POSITION;
                 float3 normalWS : NORMAL;
-                float4 screenPos :TEXCOORD1;
+                float4 screenPos :TEXCOORD0;
             };
 
             CBUFFER_START(UnityPerMaterial)
