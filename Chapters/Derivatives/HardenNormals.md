@@ -3,7 +3,7 @@
 ## Derivatives Sample: Harden Normals
 
 > In this sample **screen-space derivatives** (`ddx`, `ddy`) and a **cross product** are used to calculate a new surface normal.
-> By blending between the geometry normal and the derived normal, we can “harden” the appearance of shading—useful in **toon lighting**, **stylized rendering**, or **normal flattening**.
+> By blending between the geometry normal and the derived normal, we can “harden” the appearance of shading. Might be useful for **toon lighting**, **stylized rendering**, or **normal flattening**.
 
 ```hlsl
 float3 normal_hardened = normalize(cross(ddy(positionWS), ddx(positionWS)));
@@ -11,7 +11,7 @@ float3 normal_hardened = normalize(cross(ddy(positionWS), ddx(positionWS)));
 ---
 
 ### Visual demo
-This shader demonstrates how modifying normals with screen-space derivatives sharpens lighting transitions across surfaces—especially noticeable on curved or smooth geometry.
+This shader demonstrates how modifying normals with screen-space derivatives sharpens lighting transitions across surfaces. Especially noticeable on curved or smooth geometry.
 
 <p align="center">
 <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/Derivatives/DA_Derivatives_HardenNormals_Demo_01.gif" alt="Shader Story: Derivatives - HardenNormals" title="Shader Story: Derivatives - HardenNormals">
