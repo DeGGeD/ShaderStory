@@ -60,7 +60,7 @@ Published resources are compatible and designed to be used with:
 
 ---
 
-## ❤️ Support the Project
+## Support the Project
 
 If you find **Shader Story** helpful or inspiring, consider supporting it through:
 
