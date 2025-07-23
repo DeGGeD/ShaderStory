@@ -96,3 +96,6 @@ For commercial licensing, questions or partnership inquiries: **fridrian@gmail.c
 
 ---
 
+> **Note:** This repository does not accept pull requests.
+
+
