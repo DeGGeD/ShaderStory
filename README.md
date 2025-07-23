@@ -91,7 +91,7 @@ But:
 
 ## Credits & Contact
 
-Created by [Decompiled Art](https://www.youtube.com/@DecompiledArt)  
+Created by [Decompiled Art](https://www.patreon.com/decompiled_art)  
 For commercial licensing, questions or partnership inquiries: **fridrian@gmail.com**
 
 ---
