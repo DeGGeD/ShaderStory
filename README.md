@@ -1,5 +1,10 @@
 # Shader Story: A Journey into Shaders and Graphics Programming
 
+![ShaderStory](https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Github/ShaderStory_Github_Splash.jpg)
+
+
+
+
 > “When love and skill work together, expect a masterpiece.”  
 > — *John Ruskin*
 
