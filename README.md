@@ -6,11 +6,11 @@
 
 
 > “When love and skill work together, expect a masterpiece.”  
-> — *John Ruskin*
+> - *John Ruskin*
 
 **Shader Story** is an open educational resource exploring **real-time graphics**, **shader programming**, and **technical art techniques**.
 
-This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_art)** — a broader initiative focused on deep-dive tutorials, rendering pipelines and graphics programming tools. Shader Story brings those same insights into an **accessible format** — built for **learning**, **reference**, and **hands-on experimentation**. Main goal is to inspire and empower developers, artists, and technical creators.
+This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_art)** - a broader initiative focused on deep-dive tutorials, rendering pipelines and graphics programming tools. Shader Story brings those same insights into an **accessible format**, built for **learning**, **reference**, and **hands-on experimentation**. Main goal is to inspire and empower developers, artists, and technical creators.
 
 ---
 
@@ -26,7 +26,7 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 ---
 
 ## Library Contents
-> More articles and categories are in development — stay tuned and ⭐ star the repo!
+> More articles and categories are in development, stay tuned and ⭐ star the repo!
 
 ### Common HLSL functions
 - [Abs](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Abs.md)
@@ -87,8 +87,8 @@ You are free to:
 - ✅ Learn from and study all resources provided.
 
 But:
-- ❌ **Commercial use is not allowed** — including in games, products, asset stores, tools, or monetized media.
-- ✅ **Attribution required** — please link back to this repository and credit the author.
+- ❌ **Commercial use is not allowed** - including in games, products, asset stores, tools, or monetized media.
+- ✅ **Attribution required**, please link back to this repository and credit the author.
   
 [Full License Info](https://creativecommons.org/licenses/by-nc/4.0/)
 
