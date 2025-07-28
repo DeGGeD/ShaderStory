@@ -42,8 +42,6 @@ Shader "DecompiledArt/CommonFunctions/Fmod/Fmod"
             #pragma vertex vert
             #pragma fragment frag
 
-            #pragma shader_feature USE_ABS
-
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
 
             struct Attributes
