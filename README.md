@@ -56,6 +56,9 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 - [Silhouette](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Derivatives/Silhouette.md)
 - [Slope Detect](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Derivatives/SlopeDetect.md)
 
+### Patterns & Shapes
+- [Circle](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Circle.md)
+
 ---
 
 ## Usage & Requirements
