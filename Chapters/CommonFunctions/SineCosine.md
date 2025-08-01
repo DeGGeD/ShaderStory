@@ -120,11 +120,11 @@ Shader "DecompiledArt/CommonFunctions/SineCosine/SineCosine"
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project:
+If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
-    <img src="https://img.shields.io/badge/Join%20on%20Patreon-%20Exclusive%20Updates%20%26%20Community-orange?style=for-the-badge&logo=patreon" alt="Join on Patreon">
+    <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Github/ShaderStory_Github_Patreon.jpg" alt="DecompiledArt on Patreon">
   </a>
 </p>
 
