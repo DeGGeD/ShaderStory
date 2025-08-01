@@ -62,6 +62,7 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 - [Square](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Square.md)
 - [Stripes](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Stripes.md)
 - [Grid](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Grid.md)
+- [Checkerboard](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Checkerboard.md)
 
 ---
 
