@@ -60,6 +60,7 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 - [Circle](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Circle.md)
 - [Line](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Line.md)
 - [Square](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Square.md)
+- [Stripes](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Stripes.md)
 
 ---
 
