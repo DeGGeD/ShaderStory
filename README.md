@@ -65,6 +65,7 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 - [Checkerboard](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Checkerboard.md)
 - [Whirl](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Whirl.md)
 - [Ripplewaves](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Ripplewaves.md)
+- [Hex Grid](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/HexGrid.md)
 
 ---
 
