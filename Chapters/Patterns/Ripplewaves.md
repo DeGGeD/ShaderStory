@@ -76,7 +76,7 @@ Shader "DecompiledArt/Patterns/RippleWaves/RippleWaves"
 
 ## 🔗 Related Functions
 
-[Sine](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Sine.md) • [Smoothstep](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Smoothstep.md) • [Length](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Length.md)
+[Sine/Cosine](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/SineCosine.md) • [Smoothstep](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Smoothstep.md) • [Length](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Length.md)
 
 ---
 
