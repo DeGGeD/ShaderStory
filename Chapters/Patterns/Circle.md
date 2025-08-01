@@ -2,21 +2,18 @@
 
 ## Patterns & Shapes: Circle
 
->  **screen-space derivatives** via `fwidth()` combined with `smoothstep()` are used to create a clean, antialiased transition across a UV-defined edge.
-> It’s a common technique for **stylized outlines**, **highlight edges**, and **procedural UV masks**.
-
-> Screen-space antialiasing with **fwidth()** and **smoothstep()** creates clean, resolution-independent edges - ideal for **stylized shapes**, **highlighting**, or **procedural masks**.
+> **smoothstep()** if used for edge softening and antialiased visuals. Useful for **stylized masks**, **transitions**, **shape blending**.
 
 
 
 ```hlsl
-float edgeWidth = fwidth(uv.y);
-float mask = smoothstep(threshold - edgeWidth, threshold + edgeWidth, uv.y);
+half shape = 1 - distance(uv, float2(0.5, 0.5));
+half col_output = smoothstep(inner, outer, shape);
 ```
 ---
 
 ### Visual demo
-This shader creates a smooth vertical transition along the UV Y-axis. The fwidth() function ensures consistent edge thickness across screen resolutions and object scaling.
+This pattern uses the distance from the UV center to define a circular shape. A smoothstep() is then applied to blend the shape’s edge based on configurable thresholds, producing a clean soft circle mask.
 
 <p align="center">
 <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/Patterns/DA_Patterns_Circle_Demo_01.gif" alt="Shader Story: Patterns - Circle" title="Shader Story: Patterns - Circle">
@@ -58,6 +55,7 @@ Shader "DecompiledArt/Patterns/Circle/Circle"
 
 ```
 
+
 ### URP Shader graph
 <p align="center">
 <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/Patterns/DA_Patterns_Circle_Graph_01.png" alt="Shader Story: Patterns - Circle" title="Shader Story: Patterns - Circle">
@@ -67,7 +65,7 @@ Shader "DecompiledArt/Patterns/Circle/Circle"
 
 ## 🔗 Related Functions
 
-[Smoothstep](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Smoothstep.md) • [Lerp](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Lerp.md) • [Step](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Step.md)
+[Smoothstep](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Smoothstep.md) • [Distance](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Distance.md)
 
 ---
 
