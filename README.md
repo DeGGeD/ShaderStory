@@ -67,9 +67,10 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 - [Ripplewaves](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Ripplewaves.md)
 - [Hex Grid](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/HexGrid.md)
 
-  #### Noises:
-  - [Perlin](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Perlin.md)
-  - [Simplex](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Simplex.md)
+Noises:
+- [Perlin](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Perlin.md)
+- [Simplex](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Simplex.md)
+
 
 ---
 
