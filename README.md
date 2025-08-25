@@ -69,6 +69,7 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 
   #### Noises:
   - [Perlin](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Perlin.md)
+  - [Simplex](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Simplex.md)
 
 ---
 
