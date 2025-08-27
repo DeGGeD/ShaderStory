@@ -14,7 +14,7 @@
 
 | Use Case | Noise Application |
 |-----|------------------|
-| **Terrains** | Rocks, CLiffs. Distances create jagged edges | 
+| **Terrains** | Rocks, Cliffs. Distances create jagged edges | 
 | **Textures Generation** | Natural variation without seams. Mix with Perlin for smoother edges |
 | **Clouds** | Fluffy shapes |
 | **Water** | Bubble‑like distances; warp domains for waves |

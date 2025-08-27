@@ -70,6 +70,10 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 Noises:
 - [Perlin](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Perlin.md)
 - [Simplex](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Simplex.md)
+- [Value](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Value.md)
+- [Voronoi](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Voronoi.md)
+- [Worley](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Worley.md)
+- [Turbulence](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Turbulence.md)
 
 
 ---
