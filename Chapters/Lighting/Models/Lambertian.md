@@ -1,183 +1,82 @@
 # Shader Story
 
-## Patterns & Shapes: Perlin Noise
+## Lighting Models : Lambertian
 
-> Perlin noise is a smooth, pseudo‑random field created by interpolating gradients on a lattice. 
-It was first described in 1983 and was widely used in early 3D games such as *Quake* and *Half‑Life*.
+> Lambertian lighting, named after Johann Heinrich Lambert, is one of the most fundamental and widely used models for diffuse reflection in computer graphics.
 
+It works on the principle that light striking a surface is scattered evenly in all directions - perfect for matte materials such as **chalk**, **clay**, **unpolished stone**, etc.
+
+Its strength lies in its simplicity: brightness depends only on the cosine of the angle between the surface normal and the incoming light direction. This is known as Lambert’s Cosine Law.
+
+```hlsl
+// Pseudo-code (Complete per-vertex and per-pixel implementations, with detailed comments, are available in the related Patreon post)
+// Link: https://www.patreon.com/posts/shader-story-137878509
+
+
+float3 SurfaceColor;          // surface color
+float3 LightColor;            // light color * intensity
+float LightAttenuation;       // shadowing / distance falloff
+
+float NdotL = max(0.0, dot(normalDirection, lightDirection));
+
+float LambertDiffuse = NdotL * SurfaceColor; // Lambert's cosine law
+float3 finalColor = LambertDiffuse * LightAttenuation * LightColor;
+
+```
+
+---
+
+### Basic idea
+
+Light is emitted from a source, reflected from the surface, and perceived by the viewer (camera).
 
 <p align="center">
-<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/Patterns/Noises/DA_Patterns_Noises_Perlin_Demo_01.png" alt="Shader Story: Patterns - Perlin Noise" title="Shader Story: Patterns - Perlin Noise">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/Lighting/Models/Lambertian/DA_Lighting_Models_Lambertian_BasicIdea.png" alt="Shader Story: Lighting Models - Lambertian. Basic Idea" title="Shader Story: Lighting Models - Lambertian. Basic Idea">
 </p>
 
----
-### Practical usage scenarios:  
+### Cosine Falloff
 
-| Use Case | Noise Application |
-|-----|------------------|
-| **Terrains** | Hills, valleys, cliffs | 
-| **Textures Generation** | Patterns grain |
-| **Clouds** | Density field |
-| **Water** | Ripples |
-| **Fire / Smoke** | Chaotic flicker |
-| **Destruction masks** | Random spread |
+The amount of diffuse reflection decreases with the angle between the surface normal **N** and the light reflection direction **L**.
 
----
+<p align="center">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/Lighting/Models/Lambertian/DA_Lighting_Models_Lambertian_CosineFalloff.png" alt="Shader Story: Lighting Models - Lambertian. Cosine Falloff" title="Shader Story: Lighting Models - Lambertian. Cosine Falloff">
+</p>
 
-### Perlin vs Simplex vs Value  
+### Spherical Falloff
 
-| Feature | Perlin | Simplex | Value |
-|---------|--------|---------|-------|
-| **Speed** | Moderate (many dot products) | Faster (fewer grid points) | Fastest (direct values) |
-| **Artifacts** | Faceted, directional bias | Reduced | None (might but too sharp) |
-| **Tiling** | Simple (wrap gradients) | More complex | Straightforward |
-| **Implementation Complexity** | Medium | Medium‑high | Low |
+Diffuse light contribution also decreases with distance, following the light’s attenuation curve (0 to 1).
+
+<p align="center">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/Lighting/Models/Lambertian/DA_Lighting_Models_Lambertian_SphericalFalloff.png" alt="Shader Story: Lighting Models - Lambertian. Spherical Falloff" title="Shader Story: Lighting Models - Lambertian. Spherical Falloff">
+</p>
+
+### Lambertian Equation
+
+> d = Σ (from i=0 to n) [ intensity(light_i) × diffuse(material_property) × attenuation(light_i) × max(0, N · L) ]
+
+- Summation over all incident light sources
+- Surface diffuse property (material roughness, 0 → black / 1 → full reflection)
+- Light attenuation (distance and shadow falloff)
+- Cosine factor max(0, dot(N,L))
+
+The final diffuse **d** is computed as the **sum over all lights of their intensity**, the surface’s **diffuse material property**, **light attenuation**, and the **Lambertian cosine factor max(0, N·L)**. It ensures that light contributes proportionally to how directly it strikes the surface.
 
 ---
 
 ### Visual demo
 
 <p align="center">
-<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/Patterns/Noises/DA_Patterns_Noises_Perlin_Demo_01.gif" alt="Shader Story: Patterns - Perlin Noise" title="Shader Story: Patterns - Perlin Noise">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/Lighting/Models/Lambertian/DA_Lighting_Models_Lambertian_Demo_01.gif" alt="Shader Story: Lighting Models - Lambertian" title="Shader Story: Lighting Models - Lambertian">
 </p>
 
----
-### URP Shader Code
 
-```hlsl
-
-Shader "DecompiledArt/Patterns/Noise/Perlin/Perlin_2D"
-{
-    Properties
-    {
-        _Noise_Seed("Noise_Seed", Integer) = 42
-        _Noise_Scale ("Noise_Scale", Float) = 5.0
-        _Noise_Strength ("Noise_Strength", Range(0, 5)) = 1.0
-        _Noise_Contrast ("Noise_Contrast", Range(0.1, 5)) = 1.0
-        [Toggle(_IS_ANIMATED)] _IsAnimated ("Is Animated", Float) = 1
-        _Noise_Offset_Speed ("Noise_Offset_Speed", Vector) = (0.0, 0.0, 0.0, 0.0)
-    }
-
-    SubShader
-    {
-        Tags { "RenderPipeline" = "UniversalPipeline" "RenderType" = "Opaque" }
-
-        Pass
-        {
-            HLSLPROGRAM
-            #pragma vertex vert
-            #pragma fragment frag
-            #pragma shader_feature_local _IS_ANIMATED
-
-            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-
-            struct Attributes
-            {
-                float4 positionOS : POSITION;
-                half2 uvs : TEXCOORD0;
-            };
-
-            struct Varyings
-            {
-                float4 positionHCS : SV_POSITION;
-                half2 uvs : TEXCOORD0;
-            };
-
-            CBUFFER_START(UnityPerMaterial)
-            half _Noise_Seed;
-            half _Noise_Scale;
-            half _Noise_Strength;
-            half _Noise_Contrast;
-            half2 _Noise_Offset_Speed;
-            CBUFFER_END
-
-            // Hash generates pseudo-random gradients
-            half2 hash(half2 p)
-            {
-                p += _Noise_Seed;
-                p = half2(dot(p, half2(127.1, 311.7)), dot(p, half2(269.5, 183.3)));
-                return frac(sin(p) * 43758.5453) * 2.0 - 1.0;
-            }
-
-            // Smoothstep-like fade function
-            half fade(half t)
-            {
-                return t * t * (3.0 - 2.0 * t);
-            }
-
-            // Approximate pow for mobile (cheaper than real pow)
-            half approx_pow(half x, half p)
-            {
-                return exp2(p * log2(x + 1e-4));
-            }
-
-            half perlin2D(half2 p)
-            {
-                half2 i = floor(p);
-                half2 f = frac(p);
-
-                // Gradient vectors at corners
-                half2 a = hash(i + half2(0, 0));
-                half2 b = hash(i + half2(1, 0));
-                half2 c = hash(i + half2(0, 1));
-                half2 d = hash(i + half2(1, 1));
-
-                // Dot products between gradients and distance vectors
-                half da = dot(a, f - half2(0, 0));
-                half db = dot(b, f - half2(1, 0));
-                half dc = dot(c, f - half2(0, 1));
-                half dd = dot(d, f - half2(1, 1));
-
-                half2 u = half2(fade(f.x), fade(f.y));
-
-                // Bilinear interpolation
-                half x1 = lerp(da, db, u.x);
-                half x2 = lerp(dc, dd, u.x);
-                half result = lerp(x1, x2, u.y);
-
-                return result;
-            }
-
-            Varyings vert(Attributes IN)
-            {
-                Varyings OUT;
-                OUT.positionHCS = TransformObjectToHClip(IN.positionOS.xyz);
-                OUT.uvs = IN.uvs * _Noise_Scale;
-                return OUT;
-            }
-
-            half4 frag(Varyings IN) : SV_Target
-            {
-                half2 uvs = IN.uvs;
-
-                #ifdef _IS_ANIMATED
-                    half2 t = fmod(_Time.y * _Noise_Offset_Speed, 1000.0);
-                    uvs += t;
-                #endif
-
-                half mask_noise = perlin2D(uvs);
-                
-                // Normalization
-                mask_noise = mask_noise * 0.5 + 0.5;
-
-                mask_noise = approx_pow(mask_noise, _Noise_Contrast);
-                mask_noise *= _Noise_Strength;
-
-                half3 col_output = mask_noise.xxx;
-
-                return half4(col_output, 1.0);
-            }
-            ENDHLSL
-        }
-    }
-}
-```
+Complete per-vertex and per-pixel implementations, with detailed comments, are available on [Patreon](https://www.patreon.com/posts/shader-story-137878509).
 
 ---
 
 ## 🔗 Related Functions
 
-[Floor](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Floor.md) • [Fmod](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Fmod.md) • [Exp](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Exp.md)
+[Max](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/MinMax.md) • [Dot](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/CommonFunctions/Dot.md)
 
 ---
 
