@@ -75,6 +75,9 @@ Noises:
 - [Worley](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Worley.md)
 - [Turbulence](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Patterns/Noises/Turbulence.md)
 
+### Lighting Models
+- [Lambertian](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Lambertian.md)
+
 
 ---
 
