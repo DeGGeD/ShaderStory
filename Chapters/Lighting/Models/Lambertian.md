@@ -8,6 +8,16 @@ It works on the principle that light striking a surface is scattered evenly in a
 
 Its strength lies in its simplicity: brightness depends only on the cosine of the angle between the surface normal and the incoming light direction. This is known as Lambert’s Cosine Law.
 
+---
+
+### Visual demo
+
+<p align="center">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/Lighting/Models/Lambertian/DA_Lighting_Models_Lambertian_Demo_01.gif" alt="Shader Story: Lighting Models - Lambertian" title="Shader Story: Lighting Models - Lambertian">
+</p>
+
+---
+
 ```hlsl
 // Pseudo-code (Complete per-vertex and per-pixel implementations, with detailed comments, are available in the related Patreon post)
 // Link: https://www.patreon.com/posts/shader-story-137878509
@@ -23,6 +33,8 @@ float LambertDiffuse = NdotL * SurfaceColor; // Lambert's cosine law
 float3 finalColor = LambertDiffuse * LightAttenuation * LightColor;
 
 ```
+
+Complete per-vertex and per-pixel implementations, with detailed comments, are available on [Patreon](https://www.patreon.com/posts/shader-story-137878509).
 
 ---
 
@@ -60,17 +72,6 @@ Diffuse light contribution also decreases with distance, following the light’s
 - Cosine factor max(0, dot(N,L))
 
 The final diffuse **d** is computed as the **sum over all lights of their intensity**, the surface’s **diffuse material property**, **light attenuation**, and the **Lambertian cosine factor max(0, N·L)**. It ensures that light contributes proportionally to how directly it strikes the surface.
-
----
-
-### Visual demo
-
-<p align="center">
-<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/Lighting/Models/Lambertian/DA_Lighting_Models_Lambertian_Demo_01.gif" alt="Shader Story: Lighting Models - Lambertian" title="Shader Story: Lighting Models - Lambertian">
-</p>
-
-
-Complete per-vertex and per-pixel implementations, with detailed comments, are available on [Patreon](https://www.patreon.com/posts/shader-story-137878509).
 
 ---
 
