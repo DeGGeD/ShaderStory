@@ -67,7 +67,7 @@ Blinn-Phong computes both contributions per pixel (or per vertex). Result - smoo
 - **DiffuseColor**​ - Surface diffuse propertyMaterial diffuse color/scale (0 → black, 1 → full reflection).
 - **max(0, N⋅L_i​)** - Diffuse cosine factorLambert’s cosine law: how directly the light hits the surface. Ensures no negative contribution when light is behind the surface.
 - **SpecularColor**​ - Surface specular property / colorThe specular color or intensity: controls highlight tint and strength (metals often tint specular, dielectrics use white specular).
-- **H_i**​ - Half-vector (per light)H = normalize(L+V), where V is the view (camera) direction. Approximates the reflection alignment more cheaply and stably than computing the reflection vector R.
+- **H_i**​ - Half-vector (per light). H = normalize(L+V), where V is the view (camera) direction. Approximates the reflection alignment more cheaply and stably than computing the reflection vector R.
 - **max⁡(0,  dot(N, ⁣ ⁣H_i)^α** - Blinn-Phong specular lobe
 Measures how aligned the surface normal is with the half-vector. Raising to the power α (commonly called shininess, glossiness, or specular exponent) controls the lobe width:
   - Low α → broad, soft highlights (rough surface)
