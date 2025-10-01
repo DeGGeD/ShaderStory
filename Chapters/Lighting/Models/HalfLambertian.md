@@ -56,9 +56,13 @@ This lighting model is especially useful in stylized rendering or cases where st
 ### Half-Lambertian Equation
 
 > NdotL = dot(N, L)
-wrapped = saturate((NdotL + wrap) / (1 + wrap))
-diffuseTerm = pow(wrapped, contrast)
-L_halfLambert = diffuseTerm x attenuation x LightColor
+> 
+> wrapped = saturate((NdotL + wrap) / (1 + wrap))
+> 
+> diffuseTerm = pow(wrapped, contrast)
+> 
+> L_halfLambert = diffuseTerm x attenuation x LightColor
+> 
 
 Where:
 **N** - surface normal
