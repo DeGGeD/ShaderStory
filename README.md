@@ -77,6 +77,7 @@ Noises:
 
 ### Lighting Models
 - [Lambertian](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Lambertian.md)
+- [Half-Lambertian](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/HalfLambertian.md)
 - [Blinn-Phong](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/BlinnPhong.md)
 
 
