@@ -31,10 +31,10 @@ float wrapped = saturate((NdotL + wrap) / (1.0 + wrap))
 float diff = pow(wrapped, contrast)
 
 // Final diffuse contribution
-colorDiffuse = diff x attenuation x lightColor
+float3 colorDiffuse = diff x attenuation x lightColor
 
 // Final output
-colorOutput = baseColor x colorDiffuse
+float3 colorOutput = baseColor x colorDiffuse
 
 ```
 
