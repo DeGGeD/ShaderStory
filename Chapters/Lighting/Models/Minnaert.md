@@ -61,7 +61,7 @@ Light travels from the source, hits the surface, and reaches the viewer.
 - **Final Shading:** Multiply the Minnaert factor by the surface diffuse color, light color, and attenuation to get the final shaded result.
 
 
-### Half-Lambertian Equation
+### Minnaert Equation
 
 > d = Σ (from i=0 to n) [ I_i x atten_i x diffuseFactor x clamp( (max(0.0, dot(N, L_i)))^(1.0 + k) x (max(0.0, dot(N, V)))^k , 0.0, 1.0 ) ]
 
