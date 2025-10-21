@@ -1,6 +1,6 @@
 # Shader Story
 
-## Lighting Models : Banded
+## Lighting Models : Fresnel
 
 > The **Fresnel Lighting** describes how the amount of reflected light on a surface depends on the viewing angle.
 When looking directly at a surface (normal incidence), reflection is minimal. But when viewing at a grazing angle, reflection increases dramatically.
