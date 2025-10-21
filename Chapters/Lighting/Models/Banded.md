@@ -18,7 +18,7 @@ It’s one of the simplest yet most effective ways to give 3D objects a hand-pai
 ---
 
 ```hlsl
-// Pseudo-code (Complete per-vertex and per-pixel implementations, with detailed comments, are available in the related Patreon post)
+// Pseudo-code (Complete implementation, with detailed comments, is available in the related Patreon post)
 // Link: https://www.patreon.com/posts/shader-story-141647294
 
 // Regular Lambertian diffuse term
@@ -37,7 +37,7 @@ return banded * diffuseIntensity * lightColor;
 
 ```
 
-Complete implementation, with detailed comments is available on [Patreon](https://www.patreon.com/posts/shader-story-141647294).
+Complete implementation, with detailed comments, is available on [Patreon](https://www.patreon.com/posts/shader-story-141647294).
 
 ---
 
