@@ -84,6 +84,7 @@ Noises:
 - [Matcap](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Matcap.md)
 - [Banded](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Banded.md)
 - [Fresnel](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Fresnel.md)
+- [Image-Based (IBL)](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Ibl.md)
 
 
 ---
