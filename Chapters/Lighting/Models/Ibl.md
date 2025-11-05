@@ -8,13 +8,7 @@ Instead of computing lighting only from light sources, IBL samples a cubemap tex
 
 IBL is a foundational technique for modern physically based rendering (PBR) pipelines and is often **combined with Blinn-Phong** or **GGX specular** terms for more control.
 
-Perfect for metals, glossy plastics, lookdev.
-
-- Porous surfaces: **dust**, **chalk**
-- Fibrous materials: **velvet**, **velour**, **suede**, **carpets**
-- Soft, rough surfaces: **cloth**, **unpolished stone**
-
-The result is a shading effect where surfaces facing the viewer look slightly darker or lighter depending on the chosen roughness parameter. It produces a soft, velvety look that’s very close to the more complex Oren-Nayar model, but cheaper to compute.
+Perfect for **metals**, **glossy plastics**, **lookdev**.
 
 ---
 
