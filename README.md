@@ -85,6 +85,7 @@ Noises:
 - [Banded](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Banded.md)
 - [Fresnel](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Fresnel.md)
 - [Image-Based Lighting (IBL)](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Ibl.md)
+- [Halftone](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Halftone.md)
 
 
 ---
