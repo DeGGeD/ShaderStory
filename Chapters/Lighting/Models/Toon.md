@@ -104,10 +104,14 @@ Instead of treating light as a smooth physical phenomenon, toon lighting reinter
 ### Toon Lighting Equation
 
 > D = smoothstep(R_min, R_max, max(0, N · L)) · k_d
-A = lerp(Ground, Sky, (N_y · 0.5 + 0.5)) · k_h · (1 − D · r)
-S = step(T_s, (N · H)^g) · step(0.5, D) · C_s · k_s
-F = smoothstep(F_min, F_max, (1 − N · V)^p) · k_f
-L_final = BaseColor · (D + A + S + F)
+>
+> A = lerp(Ground, Sky, (N_y · 0.5 + 0.5)) · k_h · (1 − D · r)
+>
+> S = step(T_s, (N · H)^g) · step(0.5, D) · C_s · k_s
+>
+> F = smoothstep(F_min, F_max, (1 − N · V)^p) · k_f
+> 
+> L_final = BaseColor · (D + A + S + F)
 
 Where:
 
