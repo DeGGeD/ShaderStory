@@ -87,6 +87,7 @@ Noises:
 - [Image-Based Lighting (IBL)](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Ibl.md)
 - [Halftone](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Halftone.md)
 - [Lookup Tables (LUT)](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Lut.md)
+- [Toon](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Toon.md)
 
 
 ---
