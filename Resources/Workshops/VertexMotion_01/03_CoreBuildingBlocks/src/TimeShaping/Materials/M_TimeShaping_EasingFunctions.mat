@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_TimeShaping_EasingFunctions
+  m_Shader: {fileID: 4800000, guid: 1b64385ea10fb4cf2a4ec5906deeae77, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _Amplitude: 0.5
+    - _CenterAroundOrigin: 0
+    - _Distance: 2
+    - _Duration: 1
+    - _EaseMode: 0
+    - _PingPong: 0
+    - _SpatialFrequency: 1
+    - _SpatialOffset: 1
+    - _UseRawPhase: 0
+    m_Colors:
+    - _BaseColor: {r: 1, g: 0.9, b: 0.7, a: 1}
+    - _MotionAxisOS: {r: 1, g: 0, b: 0, a: 0}
+    - _MoveDirectionOS: {r: 0, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

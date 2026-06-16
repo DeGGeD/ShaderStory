@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Masks_Procedural
+  m_Shader: {fileID: 4800000, guid: f62052c010dab4c65a4253e439f67500, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _DEBUG_MASK
+  - _GRADIENTSOURCE_OBJECT_Y
+  - _MASKMODE_GRADIENT
+  - _NOISESPACE_WORLD
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _Amplitude: 0.099
+    - _DebugMask: 1
+    - _GRADIENTSOURCE: 1
+    - _GradientOffset: 0.3
+    - _GradientScale: 1
+    - _MASKMODE: 1
+    - _MaskMax: 0.66
+    - _MaskMin: 0.16
+    - _NOISESPACE: 1
+    - _NoiseContrast: 1
+    - _NoiseScale: 4.4
+    - _NoiseSeed: 42
+    - _NoiseSpeed: 0
+    - _WaveFrequency: 12
+    - _WaveSpeed: 2.2
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DisplaceDirectionOS: {r: 0, g: 1, b: 0, a: 0}
+    - _WaveAxisOS: {r: 0, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
