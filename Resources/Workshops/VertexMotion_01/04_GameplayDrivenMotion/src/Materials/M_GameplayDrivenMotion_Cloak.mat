@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_GameplayDrivenMotion_Cloak
+  m_Shader: {fileID: 4800000, guid: 2b842d14bce32454e8a37996d039c484, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _DEBUGMASK_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _Amplitude: 0.1
+    - _AngularStrength: 30
+    - _DebugMask: 1
+    - _DebugVertexColor: 0
+    - _DemoState: 4
+    - _Frequency: 4
+    - _GravityStrength: 3
+    - _IdleAmplitude: 2.28
+    - _IdleFrequencyScale: 1
+    - _IdleGravityStrength: 5
+    - _MaskInvert: 1
+    - _MaskPower: 1
+    - _MaskSource: 1
+    - _MaskUVChannel: 0
+    - _MaskUVEnd: 1
+    - _MaskUVOffset: -0.1
+    - _MaskUVScale: 1.2
+    - _MaskUVStart: 0
+    - _MoveGravityStrength: 0.12
+    - _PulseAmplitude: 0.03
+    - _PulseFrequency: 2
+    - _SmoothedSpeed: 0
+    - _Speed: 1
+    - _TurnCurlStrength: 0.75
+    - _TurnTrailStrength: 0.25
+    - _VelocityClamp: 1
+    - _VelocityStrength: 3.13
+    m_Colors:
+    - _AngularVelocityWS: {r: 0, g: 0, b: 0, a: 0}
+    - _CharacterForwardWS: {r: 0, g: 0, b: 1, a: 0}
+    - _CharacterVelocityWS: {r: 0, g: 0, b: 0, a: 0}
+    - _MotionDirWS: {r: 0, g: 0, b: 1, a: 0}
+    - _WaveAxisWS: {r: 0, g: 0, b: 1, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
