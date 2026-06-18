@@ -60,7 +60,7 @@ Shader "DecompiledArt/Workshop/03/Masks/Runtime/SphereMask"
                 float _MaskSoftness;
             CBUFFER_END
 
-            // Reusable mask function (matches your slide math concept)
+            // Sphere mask function
             float ComputeSphereMask(float3 positionWS)
             {
                 float dist = distance(positionWS, _MaskCenterWS);
@@ -73,6 +73,7 @@ Shader "DecompiledArt/Workshop/03/Masks/Runtime/SphereMask"
                 );
             }
 
+            // Only normalize when the vector is valid
             float3 SafeNormalizeWS(float3 v, float3 fallbackValue)
             {
                 float lenSq = dot(v, v);
