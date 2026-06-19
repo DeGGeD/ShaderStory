@@ -15,7 +15,7 @@ Shader "DecompiledArt/Workshop/03/Masks/Procedural"
         _WaveFrequency("Wave Frequency", Range(0.0, 20.0)) = 2.0
         _WaveSpeed("Wave Speed", Range(-10.0, 10.0)) = 1.5
 
-        // Direction of displacement in object space.
+        // Direction of displacement in object space
         // Example:
         // (0,1,0) = move along local up
         // (1,0,0) = move along local right
@@ -146,14 +146,13 @@ Shader "DecompiledArt/Workshop/03/Masks/Procedural"
                 return t * t * (3.0h - 2.0h * t);
             }
 
-            // Approximate pow for mask shaping / contrast.
-            // Good enough for workshop usage and cheaper than full precision pow.
+            // Approximate pow for mask shaping / contrast
             inline half ApproxPowPositive(half x, half p)
             {
                 return exp2(p * log2(max(x, 1e-4h)));
             }
 
-            // Pseudo-random 2D hash for gradient generation.
+            // Pseudo-random 2D hash for gradient generation
             inline half2 Hash2(half2 p)
             {
                 p += _NoiseSeed;
@@ -315,9 +314,8 @@ Shader "DecompiledArt/Workshop/03/Masks/Procedural"
                 OUT.positionWS  = TransformObjectToWorld(positionOS);
                 OUT.positionHCS = TransformWorldToHClip(OUT.positionWS);
 
-                // Cheap normal handling.
-                // For larger displacement, normal reconstruction can be added,
-                // but this shader keeps shading simple for workshop clarity.
+                // Normals handling
+                // For larger displacement, normal reconstruction can be added
                 OUT.normalWS = TransformObjectToWorldNormal(IN.normalOS);
 
                 OUT.mask = mask;

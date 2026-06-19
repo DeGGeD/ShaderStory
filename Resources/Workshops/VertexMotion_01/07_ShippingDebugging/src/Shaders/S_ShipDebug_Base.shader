@@ -730,8 +730,6 @@ Shader "DecompiledArt/Workshop/07/ShippingDebugging/Base"
                 //
                 // R = Specular intensity
                 // G = Gloss / smoothness
-                //
-                // Keeping the packing intentionally simple for workshop use.
                 // ------------------------------------------------------------
 
                 half specMask = specSample.r;
@@ -751,37 +749,19 @@ Shader "DecompiledArt/Workshop/07/ShippingDebugging/Base"
                             sampler_Tex_Normal,
                             IN.uv));
 
-                float3 N =
-                    normalize(
-                        IN.normalWS);
+                float3 N = normalize(IN.normalWS);
+                float3 T = normalize(IN.tangentWS.xyz);
 
-                float3 T =
-                    normalize(
-                        IN.tangentWS.xyz);
-
-                T =
-                    normalize(
-                        T - N * dot(T, N));
+                T = normalize(T - N * dot(T, N));
 
                 // Build a stable orthonormal basis in world space.
                 // We re-orthogonalize T against N first, then derive B.
-                float3 B =
-                    normalize(
-                        cross(N, T)) *
-                    IN.tangentWS.w;
+                float3 B = normalize(cross(N, T)) * IN.tangentWS.w;
 
-                float3x3 tbn =
-                    float3x3(
-                        T,
-                        B,
-                        N);
+                float3x3 tbn = float3x3(T, B,N);
 
                 // Convert tangent-space normal into world space for lighting.
-                N =
-                    normalize(
-                        mul(
-                            tbn,
-                            tangentNormal));
+                N = normalize(mul(tbn, tangentNormal));
 
                 // ------------------------------------------------------------
                 // Main directional light
@@ -985,10 +965,7 @@ Shader "DecompiledArt/Workshop/07/ShippingDebugging/Base"
             ENDHLSL
         }
 
-        // This pass only writes depth.
-        // For workshop clarity we name and tag it honestly instead of pretending
-        // to output normals. Add a dedicated DepthNormals pass later if the
-        // project needs SSAO or another effect that samples scene normals.
+        // DepthNormalsOnly
         Pass
         {
             Name "DepthNormalsOnly"

@@ -116,7 +116,7 @@ Shader "DecompiledArt/Workshop/02/Spaces/02"
                     VertexPositionInputs posInputs = GetVertexPositionInputs(positionOS);
                     positionCS = posInputs.positionCS;
 
-                    // Lighting remains intentionally simple for workshop clarity.
+                    // Simplified lighting
                     OUT.normalWS = normalize(TransformObjectToWorldNormal(normalOS));
                 }
                 // World space: motion belongs to the environment.

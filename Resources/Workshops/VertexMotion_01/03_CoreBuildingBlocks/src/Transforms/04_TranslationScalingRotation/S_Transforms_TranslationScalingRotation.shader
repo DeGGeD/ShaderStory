@@ -52,7 +52,7 @@ Shader "DecompiledArt/Workshop/03/Transforms/TranslationScalingRotation"
             // -----------------------------------------------------------------
             // Matrix builders used for workshop explanation.
             //
-            // In production we usually avoid constructing full matrices per
+            // In production usually avoid constructing full matrices per
             // vertex when simpler math will do, but they are excellent for
             // explaining how TRS is organized and why order matters.
             // -----------------------------------------------------------------
@@ -69,6 +69,7 @@ Shader "DecompiledArt/Workshop/03/Transforms/TranslationScalingRotation"
                 );
             }
 
+            // Scale - diagonal
             float4x4 Scale(float3 s)
             {
                 return float4x4(

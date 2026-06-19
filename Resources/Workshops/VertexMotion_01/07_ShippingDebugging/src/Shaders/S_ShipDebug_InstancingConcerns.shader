@@ -1576,14 +1576,11 @@ Shader "DecompiledArt/Workshop/07/ShippingDebugging/InstancingConcerns"
             ENDHLSL
         }
 
-        // This pass only writes depth.
-        // For workshop clarity we name and tag it honestly instead of pretending
-        // to output normals. Add a dedicated DepthNormals pass later if the
-        // project needs SSAO or another effect that samples scene normals.
+        //Depth
         Pass
         {
-            Name "DepthOnly"
-            Tags { "LightMode" = "DepthOnly" }
+            Name "DepthNormalsOnly"
+            Tags { "LightMode" = "DepthNormalsOnly" }
 
             ZWrite On
             ZTest LEqual

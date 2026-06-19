@@ -143,7 +143,7 @@ Shader "DecompiledArt/Workshop/05/Patterns/Waveform"
                 half3 diffuse = _BaseColor.rgb * mainLight.color * (NdotL * mainLight.shadowAttenuation);
                 half3 ambient = _BaseColor.rgb * IN.bakedGI * _AmbientStrength;
 
-                // Explicit Blinn-Phong style specular for workshop readability.
+                // Blinn-Phong style specular
                 half spec = ((_SpecPower + 2.0h) * 0.125h)
                           * pow(max(NdotH, 0.0001h), _SpecPower)
                           * _SpecIntensity

@@ -978,8 +978,6 @@ Shader "DecompiledArt/Workshop/07/ShippingDebugging/TAAMotionVectors"
                 //
                 // R = Specular intensity
                 // G = Gloss / smoothness
-                //
-                // Keeping the packing intentionally simple for workshop use.
                 // ------------------------------------------------------------
 
                 half specMask = specSample.r;
@@ -1446,10 +1444,7 @@ Shader "DecompiledArt/Workshop/07/ShippingDebugging/TAAMotionVectors"
             ENDHLSL
         }
 
-        // This pass only writes depth.
-        // For workshop clarity we name and tag it honestly instead of pretending
-        // to output normals. Add a dedicated DepthNormals pass later if the
-        // project needs SSAO or another effect that samples scene normals.
+        // DepthNormalsOnly pass
         Pass
         {
             Name "DepthNormalsOnly"

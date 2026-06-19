@@ -1,18 +1,7 @@
 #ifndef WORKSHOP_WAVE_NORMALS_RECONSTRUCTION_INCLUDED
 #define WORKSHOP_WAVE_NORMALS_RECONSTRUCTION_INCLUDED
 
-// Shared normal reconstruction helpers for workshop wave shaders.
-// The key teaching point is that geometry displacement and shading correction
-// are related, but separable concerns.
-//
-// Usage pattern:
-// 1. Provide a shader-specific function named:
-//      float3 ApplyAllWaves(float3 baseWS);
-//    It must return the displaced world-space position for the input point.
-// 2. Call ReconstructWaveNormalWS(baseWS, _NormalEpsilon) when the material
-//    toggle enables reconstructed normals.
-// 3. Optionally layer a tangent-space detail normal on top of the reconstructed
-//    geometric normal using ApplyDetailNormalTS_WS(...).
+// Shared normal reconstruction helpers
 
 float3 ReconstructWaveNormalWS(float3 baseWS, float normalEpsilon)
 {
