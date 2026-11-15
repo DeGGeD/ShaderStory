@@ -44,13 +44,19 @@ One mesh, one wave, three owners. Rotate or move the asset: in object space the 
 <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/CoordinateSpaces/DA_VertexAnim_CoordinateSpaces_Demo_01.gif" alt="Shader Story: Vertex Animation - Coordinate Spaces" title="Shader Story: Vertex Animation - Coordinate Spaces">
 </p>
 
+<p align="center"><em>Object space</em></p>
+
 <p align="center">
 <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/CoordinateSpaces/DA_VertexAnim_CoordinateSpaces_Demo_02.gif" alt="Shader Story: Vertex Animation - Coordinate Spaces" title="Shader Story: Vertex Animation - Coordinate Spaces">
 </p>
 
+<p align="center"><em>World space</em></p>
+
 <p align="center">
 <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/CoordinateSpaces/DA_VertexAnim_CoordinateSpaces_Demo_03.gif" alt="Shader Story: Vertex Animation - Coordinate Spaces" title="Shader Story: Vertex Animation - Coordinate Spaces">
 </p>
+
+<p align="center"><em>View space</em></p>
 
 ---
 
