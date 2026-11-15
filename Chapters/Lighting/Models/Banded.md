@@ -89,6 +89,9 @@ If this article helped you, consider supporting the project on Patreon - you'll 
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
     <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Github/ShaderStory_Github_Patreon.jpg" alt="DecompiledArt on Patreon">
   </a>
+  <a href="https://www.buymeacoffee.com/shaderstory" target="_blank">
+    <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Github/ShaderStory_Github_BuyMeACoffee.png" alt="DecompiledArt on Buy Me a Coffee">
+  </a>
 </p>
 
 Your support helps keep this library open, growing, and free for everyone.
