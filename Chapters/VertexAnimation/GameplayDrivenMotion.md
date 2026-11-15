@@ -6,42 +6,58 @@
 
 > **Filter gameplay data before it drives deformation.** Smooth and clamp on the CPU; never let raw, jittery inputs reach the vertex math directly.
 
-```hlsl
-float speed01 = saturate(_SmoothedSpeed / _MaxSpeed);
-float activation = smoothstep(0.05, 0.5, speed01);
-float response = _IdleAmplitude + activation;  // small idle flutter even at rest
-```
 ---
 
 ### The four steps
 
+Follow the same shader through the four states; this is the whole subject in thirty seconds.
+
 **Step 1: Time only.** Every vertex receives the same temporal input, so the whole surface pulses uniformly. *This is motion, not yet behavior*, but it's a valuable checkpoint: it proves the deformation path is live before anything else is added.
+
+```hlsl
+float phase = GetWrappedTemporalPhase();
+float3 move = normalWS * (sin(phase) * _Amplitude);
+```
+
+<p align="center">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/GameplayDrivenMotion/DA_VertexAnim_GameplayDrivenMotion_Demo_01.gif" alt="Shader Story: Vertex Animation - Gameplay-Driven Motion" title="Shader Story: Vertex Animation - Gameplay-Driven Motion">
+</p>
 
 **Step 2: + Axis.** Project world position onto a direction to spread the phase across the mesh. Now the wave *travels* instead of pulsing. Note the two jobs: the **axis** sets *where the pattern travels*; the **move direction** sets *which way vertices displace*. Different vectors, different effects.
 
+```hlsl
+float3 axis = SafeNormalizeAxis(_CharacterForwardWS, float3(0, 0, 1));
+float phase = GetWrappedTemporalPhase() + dot(positionWS, axis) * _Frequency;
+float3 move = normalWS * (sin(phase) * _Amplitude);
+```
+
+<p align="center">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/GameplayDrivenMotion/DA_VertexAnim_GameplayDrivenMotion_Demo_02.gif" alt="Shader Story: Vertex Animation - Gameplay-Driven Motion" title="Shader Story: Vertex Animation - Gameplay-Driven Motion">
+</p>
+
 **Step 3: + Mask.** Tell the shader *where motion is allowed*. A vertex-color influence, near zero at the attached end, strong at the free end, does the work: the motion function stays generic and reusable; the *asset* decides where that motion is allowed. Same shader, different meshes, different character.
+
+```hlsl
+float3 axis = SafeNormalizeAxis(_CharacterForwardWS, float3(0, 0, 1));
+float phase = GetWrappedTemporalPhase() + dot(positionWS, axis) * _Frequency;
+float3 move = normalWS * (sin(phase) * _Amplitude * mask);
+```
+
+<p align="center">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/GameplayDrivenMotion/DA_VertexAnim_GameplayDrivenMotion_Demo_03.gif" alt="Shader Story: Vertex Animation - Gameplay-Driven Motion" title="Shader Story: Vertex Animation - Gameplay-Driven Motion">
+</p>
 
 **Step 4: + Gameplay parameters.** Live data modulates everything: speed scales the response (running streams, standing still leaves a subtle idle flutter), turning adds sideways drag. Two details that matter:
 
 - A *fully static* idle reads as dead; an instant jump from still to full motion reads as fake. Keep a small masked flutter alive at zero speed.
 - The inputs are **smoothed** on the CPU (asymmetric response times: fast to engage, slower to settle) so the response feels physical instead of noisy.
 
----
-
-### Visual demo
-Follow the same shader through the four states; this is the whole subject in thirty seconds.
-
-<p align="center">
-<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/GameplayDrivenMotion/DA_VertexAnim_GameplayDrivenMotion_Demo_01.gif" alt="Shader Story: Vertex Animation - Gameplay-Driven Motion" title="Shader Story: Vertex Animation - Gameplay-Driven Motion">
-</p>
-
-<p align="center">
-<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/GameplayDrivenMotion/DA_VertexAnim_GameplayDrivenMotion_Demo_02.gif" alt="Shader Story: Vertex Animation - Gameplay-Driven Motion" title="Shader Story: Vertex Animation - Gameplay-Driven Motion">
-</p>
-
-<p align="center">
-<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/GameplayDrivenMotion/DA_VertexAnim_GameplayDrivenMotion_Demo_03.gif" alt="Shader Story: Vertex Animation - Gameplay-Driven Motion" title="Shader Story: Vertex Animation - Gameplay-Driven Motion">
-</p>
+```hlsl
+float speed = min(_SmoothedSpeed, _VelocityClamp);
+float speed01 = saturate(speed / max(_VelocityClamp, 1e-4));
+float activation = smoothstep(0.05, 0.5, speed01);
+finalMove = lerp(idleMove, animatedMove, activation) + turnTrail;
+```
 
 <p align="center">
 <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/GameplayDrivenMotion/DA_VertexAnim_GameplayDrivenMotion_Demo_04.gif" alt="Shader Story: Vertex Animation - Gameplay-Driven Motion" title="Shader Story: Vertex Animation - Gameplay-Driven Motion">
