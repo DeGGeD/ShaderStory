@@ -100,37 +100,37 @@ Noises:
 - [Data Sources](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/DataSources.md)
 - [Matrices](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Matrices.md)
 
-Time:
+<!-- Time:
 - [Time Wrapping](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Time/TimeWrapping.md)
 - [Easing Functions](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Time/EasingFunctions.md)
-- [Phase Offset](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Time/PhaseOffset.md)
+- [Phase Offset](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Time/PhaseOffset.md) -->
 
-Masks:
+<!-- Masks:
 - [Procedural Masks](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Masks/ProceduralMasks.md)
 - [Authored Masks](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Masks/AuthoredMasks.md)
-- [Runtime Masks](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Masks/RuntimeMasks.md)
+- [Runtime Masks](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Masks/RuntimeMasks.md) -->
 
 Interaction:
 - [Gameplay-Driven Motion](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/GameplayDrivenMotion.md)
 
-Motion Patterns:
+<!-- Motion Patterns:
 - [Sine Wave Offset](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Patterns/SineWaveOffset.md)
 - [Gerstner Waves](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Patterns/GerstnerWaves.md)
 - [Normals Reconstruction](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Patterns/NormalsReconstruction.md)
-- [Controlled Irregularity](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Patterns/ControlledIrregularity.md)
+- [Controlled Irregularity](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Patterns/ControlledIrregularity.md) -->
 
-Pivot Motion:
+<!-- Pivot Motion:
 - [Single Object Mesh Pivot](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/PivotMotion/SingleObjectMeshPivot.md)
 - [Single Object Pivot Data](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/PivotMotion/SingleObjectPivotData.md)
-- [Multiple Objects Pivot Bake](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/PivotMotion/MultipleObjectsPivotBake.md)
+- [Multiple Objects Pivot Bake](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/PivotMotion/MultipleObjectsPivotBake.md) -->
 
-Shipping & Production:
+<!-- Shipping & Production:
 - [Pass Consistency](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/PassConsistency.md)
 - [Bounds](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/Bounds.md)
 - [Motion Vectors & TAA](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/MotionVectorsTaa.md)
 - [Normals](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/NormalsShipping.md)
 - [LODs](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/Lods.md)
-- [Instancing](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/Instancing.md)
+- [Instancing](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/Instancing.md) -->
 
 ---
 
