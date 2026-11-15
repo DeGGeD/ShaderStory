@@ -18,6 +18,11 @@ This is a **side project of [Decompiled Art](https://www.patreon.com/decompiled_
 
 - 📘 [About Shader Story](#shader-story-a-journey-into-shaders-and-graphics-programming)
 - 📚 [Library Contents](#library-contents)
+  - 🔢 [Common HLSL Functions](#common-hlsl-functions)
+  - 📐 [Derivatives](#derivatives)
+  - 🔷 [Patterns & Shapes](#patterns--shapes)
+  - 💡 [Lighting Models](#lighting-models)
+  - 🌊 [Vertex Animation](#vertex-animation)
 - ⚙️ [Usage & Requirements](#usage--requirements)
 - ❤️ [Support the Project](#support-the-project)
 - 🪪 [License](#license)
@@ -89,6 +94,43 @@ Noises:
 - [Lookup Tables (LUT)](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Lut.md)
 - [Toon](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/Lighting/Models/Toon.md)
 
+### Vertex Animation
+- [Introduction](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Introduction.md)
+- [Coordinate Spaces](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/CoordinateSpaces.md)
+- [Data Sources](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/DataSources.md)
+- [Matrices](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Matrices.md)
+
+Time:
+- [Time Wrapping](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Time/TimeWrapping.md)
+- [Easing Functions](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Time/EasingFunctions.md)
+- [Phase Offset](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Time/PhaseOffset.md)
+
+Masks:
+- [Procedural Masks](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Masks/ProceduralMasks.md)
+- [Authored Masks](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Masks/AuthoredMasks.md)
+- [Runtime Masks](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Masks/RuntimeMasks.md)
+
+Interaction:
+- [Gameplay-Driven Motion](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/GameplayDrivenMotion.md)
+
+Motion Patterns:
+- [Sine Wave Offset](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Patterns/SineWaveOffset.md)
+- [Gerstner Waves](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Patterns/GerstnerWaves.md)
+- [Normals Reconstruction](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Patterns/NormalsReconstruction.md)
+- [Controlled Irregularity](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Patterns/ControlledIrregularity.md)
+
+Pivot Motion:
+- [Single Object Mesh Pivot](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/PivotMotion/SingleObjectMeshPivot.md)
+- [Single Object Pivot Data](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/PivotMotion/SingleObjectPivotData.md)
+- [Multiple Objects Pivot Bake](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/PivotMotion/MultipleObjectsPivotBake.md)
+
+Shipping & Production:
+- [Pass Consistency](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/PassConsistency.md)
+- [Bounds](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/Bounds.md)
+- [Motion Vectors & TAA](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/MotionVectorsTaa.md)
+- [Normals](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/NormalsShipping.md)
+- [LODs](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/Lods.md)
+- [Instancing](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/Instancing.md)
 
 ---
 
@@ -109,6 +151,9 @@ If you find **Shader Story** helpful or inspiring, consider supporting it throug
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
     <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Github/ShaderStory_Github_Patreon.jpg" alt="DecompiledArt on Patreon">
+  </a>
+  <a href="https://www.buymeacoffee.com/shaderstory" target="_blank">
+    <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Github/ShaderStory_Github_BuyMeACoffee.png" alt="DecompiledArt on Buy Me a Coffee">
   </a>
 </p>
 
