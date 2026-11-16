@@ -100,10 +100,10 @@ Noises:
 - [Data Sources](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/DataSources.md)
 - [Matrices](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Matrices.md)
 
-<!-- Time:
+Time:
 - [Time Wrapping](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Time/TimeWrapping.md)
 - [Easing Functions](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Time/EasingFunctions.md)
-- [Phase Offset](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Time/PhaseOffset.md) -->
+- [Phase Offset](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Time/PhaseOffset.md)
 
 Masks:
 - [Procedural Masks](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Masks/ProceduralMasks.md)
