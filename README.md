@@ -124,13 +124,13 @@ Motion Patterns:
 - [Single Object Pivot Data](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/PivotMotion/SingleObjectPivotData.md)
 - [Multiple Objects Pivot Bake](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/PivotMotion/MultipleObjectsPivotBake.md) -->
 
-<!-- Shipping & Production:
+Shipping & Production:
 - [Pass Consistency](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/PassConsistency.md)
 - [Bounds](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/Bounds.md)
 - [Motion Vectors & TAA](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/MotionVectorsTaa.md)
 - [Normals](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/NormalsShipping.md)
 - [LODs](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/Lods.md)
-- [Instancing](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/Instancing.md) -->
+- [Instancing](https://github.com/DeGGeD/ShaderStory/blob/main/Chapters/VertexAnimation/Shipping/Instancing.md)
 
 ---
 
