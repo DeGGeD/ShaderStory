@@ -35,6 +35,14 @@ The mask rendered as color, before any displacement is applied. The red channel 
 <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/Masks/AuthoredMasks/DA_VertexAnim_AuthoredMasks_Demo_01.gif" alt="Shader Story: Vertex Animation - Authored Masks" title="Shader Story: Vertex Animation - Authored Masks">
 </p>
 
+And the data it comes from, painted in the DCC before it ever reaches the shader:
+
+<p align="center">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/Masks/AuthoredMasks/DA_VertexAnim_AuthoredMasks_Sources_01.jpg" alt="Shader Story: Vertex Animation - Authored Masks" title="Shader Story: Vertex Animation - Authored Masks">
+</p>
+
+<p align="center"><em>Painted source data: vertex color influence on the mesh, and a UV-space mask texture.</em></p>
+
 ---
 
 ### URP Shader Code
