@@ -9,6 +9,7 @@
 float3 result = lerp(colorA, colorB, blendFactor); // Linear interpolation
 
 ```
+
 ---
 
 ### Visual demo 

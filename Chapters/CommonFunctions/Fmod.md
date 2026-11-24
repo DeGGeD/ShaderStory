@@ -8,6 +8,7 @@
 ```hlsl
 float fmod(float x, float y);
 ```
+
 ---
 
 ### Visual demo

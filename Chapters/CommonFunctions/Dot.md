@@ -9,6 +9,7 @@
 float d = dot(normalize(vecA), normalize(vecB)); // returns -1 to 1
 
 ```
+
 ---
 
 ### Visual demo 

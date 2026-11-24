@@ -11,6 +11,7 @@ float result = sqrt(x);   // Standard square root
 float result = rsqrt(x);  // Fast inverse square root (1.0 / sqrt(x))
 
 ```
+
 ---
 
 ### Visual demo

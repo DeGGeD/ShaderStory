@@ -9,6 +9,7 @@
 float3 dir = normalize(vec); // vector with length = 1
 
 ```
+
 ---
 
 ### Visual demo 

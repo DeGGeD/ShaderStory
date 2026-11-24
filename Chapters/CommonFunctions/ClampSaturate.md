@@ -3,7 +3,7 @@
 ## Common HLSL Functions: Clamp & Saturate
 
 > clamp(x, min, max) restricts a value between a minimum and maximum.
-> saturate(x) is a shorthand for clamp(x, 0.0, 1.0) — it's faster and widely used for **color clamping**, **masking**, and **value normalization**.
+> saturate(x) is a shorthand for clamp(x, 0.0, 1.0) - it's faster and widely used for **color clamping**, **masking**, and **value normalization**.
 
 ```hlsl
 float clamp(float x, float minVal, float maxVal);

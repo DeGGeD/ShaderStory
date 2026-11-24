@@ -10,6 +10,7 @@ float result = sin(x);  // Returns sine of input (radians)
 float result = cos(x);  // Returns cosine of input (radians)
 
 ```
+
 ---
 
 ### Visual demo

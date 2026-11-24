@@ -8,6 +8,7 @@
 ```hlsl
 float step(float edge, float x);
 ```
+
 ---
 
 ### Visual demo

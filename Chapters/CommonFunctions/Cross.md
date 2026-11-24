@@ -11,6 +11,7 @@ Note that the order of inputs matters. cross(a, b) is not the same as cross(b, a
 float3 c = cross(vecA, vecB); // perpendicular to vecA and vecB
 
 ```
+
 ---
 
 ### Visual demo 
