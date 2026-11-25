@@ -13,6 +13,7 @@ half2 maskA = step(edge, uvTiled);
 half2 maskB = step(edge, 1.0 - uvTiled);
 half col_output = maskA.x * maskA.y * maskB.x * maskB.y;
 ```
+
 ---
 
 ### Visual demo

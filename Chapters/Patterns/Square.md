@@ -12,6 +12,7 @@ half2 uvOffset = abs((uv * 2.0) - 1.0) - edgeLength;
 half2 aaEdge = 1.0 - (uvOffset / fwidth(uvOffset));
 half col_output = saturate(min(aaEdge.x, aaEdge.y));
 ```
+
 ---
 
 ### Visual demo

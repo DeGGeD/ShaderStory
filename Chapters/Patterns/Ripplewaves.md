@@ -14,6 +14,7 @@ half dist = length(uvs_centered);
 half wave = sin(dist * frequency);
 half mask_wave = smoothstep(1.0 - thickness, 1.0, abs(wave));
 ```
+
 ---
 
 ### Visual demo

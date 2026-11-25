@@ -18,6 +18,7 @@ uv = abs(frac(uv) - 0.5);
 
 mask = step(line_width, abs(1 - max(uv.x * 1.5 + uv.y, uv.y * 2.0)));
 ```
+
 ---
 
 ### Visual demo

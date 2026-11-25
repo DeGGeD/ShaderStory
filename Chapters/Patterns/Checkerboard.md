@@ -11,6 +11,7 @@ Perfect for **stylized grid overlays**, **procedural scanlines** and/or **patter
 half2 uvs = floor(uv * tiling);
 half mask_board = fmod(uvs.x + uvs.y, 2.0);
 ```
+
 ---
 
 ### Visual demo

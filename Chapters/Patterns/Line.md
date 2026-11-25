@@ -12,6 +12,7 @@ half2 uvs = abs(uv + float2(-offsetX, 0.0)) - float2(width, 1.0);
 half2 mask_line = 1 - (uvs / fwidth(uvs));
 half col_output = saturate(min(mask_line.x, mask_line.y));
 ```
+
 ---
 
 ### Visual demo

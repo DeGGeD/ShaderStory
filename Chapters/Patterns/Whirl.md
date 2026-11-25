@@ -15,6 +15,7 @@ half radius = length(uvs_centered);
 half whirl_coords = _Whirl_Density * angle + _Whirl_Twist * radius * 6.2831;
 half mask_whirl = step(0.5, frac(whirl_coords / 3.14159));
 ```
+
 ---
 
 ### Visual demo

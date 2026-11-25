@@ -10,6 +10,7 @@
 half shape = 1 - distance(uv, float2(0.5, 0.5));
 half col_output = smoothstep(inner, outer, shape);
 ```
+
 ---
 
 ### Visual demo

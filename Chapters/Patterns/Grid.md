@@ -13,6 +13,7 @@ half2 uvBox = abs((uvTiled * 2.0) - 1.0) - edge;
 half2 smooth = 1.0 - (uvBox / fwidth(uvBox));
 half col_output = saturate(min(smooth.x, smooth.y));
 ```
+
 ---
 
 ### Visual demo
