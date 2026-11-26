@@ -10,6 +10,7 @@
 half mask = IN.color.r;  // painted influence
 mask = pow(mask, _MaskPower) * (1.0 - _MaskInvert > 0.5 ? 1.0 : 0.0);  // shape it
 ```
+
 ---
 
 ### The four authored sources

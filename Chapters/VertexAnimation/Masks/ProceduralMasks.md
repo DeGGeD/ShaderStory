@@ -11,6 +11,7 @@ half gradientMask = smoothstep(_MaskMin, _MaskMax, positionOS.y);
 half noiseMask = SimpleNoise(positionOS.xz * _NoiseScale + scroll);
 half mask = gradientMask * noiseMask;  // structure × breakup
 ```
+
 ---
 
 ### Structure × breakup

@@ -9,6 +9,7 @@ float dist = distance(positionWS, _MaskCenterWS);
 float mask = 1.0 - smoothstep(_MaskRadius, _MaskRadius + _MaskSoftness, dist);
 positionWS += _DisplaceDirectionWS * _Amplitude * mask;
 ```
+
 ---
 
 ### Why a sphere
