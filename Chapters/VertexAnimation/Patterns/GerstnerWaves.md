@@ -17,6 +17,7 @@ float3 GerstnerOffset(float3 baseWS, float2 dir, float amp, float freq, float sp
     return offset;
 }
 ```
+
 ---
 
 ### Why the horizontal component matters

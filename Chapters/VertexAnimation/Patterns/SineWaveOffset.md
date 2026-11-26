@@ -15,6 +15,7 @@ float temporalPhase = frac(_Time.y * _Speed) * TWO_PI;
 float wave = sin(spatialPhase + temporalPhase + _PhaseOffset) * _Amplitude;
 positionOS += offsetDirOS * wave * mask;
 ```
+
 ---
 
 ### Anatomy of the pattern

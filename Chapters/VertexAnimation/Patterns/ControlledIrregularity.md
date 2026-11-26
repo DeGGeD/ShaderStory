@@ -10,6 +10,7 @@ half speed = lerp(_MinSpeed, _MaxSpeed, noise);
 half phase = seed * TWO_PI;
 half wave = sin(dot(positionOS, axis) * _Frequency + _Time.y * speed + phase) * _Amplitude;
 ```
+
 ---
 
 ### Why "more" fails

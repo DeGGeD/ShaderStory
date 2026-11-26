@@ -12,6 +12,7 @@ float3 px = deform(baseWS + float3(eps, 0, 0));
 float3 pz = deform(baseWS + float3(0, 0, eps));
 float3 n = normalize(cross(pz - p, px - p));  // the new geometric normal
 ```
+
 ---
 
 ### The four repair methods
