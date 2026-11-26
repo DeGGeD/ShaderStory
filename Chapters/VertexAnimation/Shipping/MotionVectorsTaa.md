@@ -11,6 +11,7 @@ float3 currentOS = EvaluateAnimatedPositionOS(IN.positionOS, IN.color, WrappedTi
 float3 previousOS = EvaluateAnimatedPositionOS(IN.positionOS, IN.color, WrappedTimeOffset(-MotionDeltaTime()));
 // motion vector = difference of the two clip-space results
 ```
+
 ---
 
 ### What the pass must do

@@ -10,6 +10,7 @@
 // The design step, done on day one, outside the shader:
 renderer.bounds = new Bounds(center, size + 2 * maxDisplacement);
 ```
+
 ---
 
 ### Why it fails

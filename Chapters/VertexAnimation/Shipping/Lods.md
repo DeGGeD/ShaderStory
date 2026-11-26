@@ -10,6 +10,7 @@
 half lodLevel = ComputeMotionLodLevel();  // distance → 0..3
 float4 scales = GetMotionLodScales(lodLevel, _MainLodScales, _DetailLodScales, _LeafLodScales);  // per-layer strength per LOD
 ```
+
 ---
 
 ### The motion ladder

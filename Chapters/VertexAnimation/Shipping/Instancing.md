@@ -11,6 +11,7 @@ half seed = Hash13(objectPivotWS);  // stable per object
 half phase = seed * _Jitter * TWO_PI;  // breaks the sync
 half amp = lerp(1 - _Jitter, 1, seed) * _Override;  // narrow band, not chaos
 ```
+
 ---
 
 ### Where per-instance data lives

@@ -9,6 +9,7 @@
 ```hlsl
 float3 N = normalize(lerp(originalNormalWS, reconstructedNormalWS, _NormalBlend));
 ```
+
 ---
 
 ### The decision ladder

@@ -10,6 +10,7 @@
 // One function, many passes:
 float3 EvaluateAnimatedPositionOS(float3 positionOS, float4 color, float time);
 ```
+
 ---
 
 ### The motion contract, pass by pass
