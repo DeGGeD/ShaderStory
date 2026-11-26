@@ -15,7 +15,7 @@ half depthDiff = length(float2(ddx(depth), ddy(depth)));
 
 ### Visual demo
 This shader highlights geometry edges and silhouettes by measuring changes in surface normals and depth across the screen.
-The stronger the difference, the brighter the output - making silhouettes pop naturally from the background.
+The stronger the difference, the brighter the output, making silhouettes pop naturally from the background.
 
 <p align="center">
 <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/Derivatives/DA_Derivatives_Silhouette_Demo_01.gif" alt="Shader Story: Derivatives - Silhouette" title="Shader Story: Derivatives - Silhouette">
@@ -112,7 +112,7 @@ Shader "DecompiledArt/Derivatives/Silhouette/Silhouette"
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
