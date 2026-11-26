@@ -8,6 +8,7 @@
 ```hlsl
 float3 normal_hardened = normalize(cross(ddy(positionWS), ddx(positionWS)));
 ```
+
 ---
 
 ### Visual demo

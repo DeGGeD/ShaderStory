@@ -10,11 +10,12 @@
 half normalDiff = length(ddx(normalWS) + ddy(normalWS));
 half depthDiff = length(float2(ddx(depth), ddy(depth)));
 ```
+
 ---
 
 ### Visual demo
 This shader highlights geometry edges and silhouettes by measuring changes in surface normals and depth across the screen.
-The stronger the difference, the brighter the output—making silhouettes pop naturally from the background.
+The stronger the difference, the brighter the output - making silhouettes pop naturally from the background.
 
 <p align="center">
 <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/Derivatives/DA_Derivatives_Silhouette_Demo_01.gif" alt="Shader Story: Derivatives - Silhouette" title="Shader Story: Derivatives - Silhouette">

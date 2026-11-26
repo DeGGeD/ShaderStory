@@ -10,6 +10,7 @@ float dy_dx = ddx(worldPos.y);
 float dy_dy = ddy(worldPos.y);
 float slope = length(float2(dy_dx, dy_dy));
 ```
+
 ---
 
 ### Visual demo

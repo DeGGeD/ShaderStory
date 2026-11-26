@@ -9,6 +9,7 @@
 float edgeWidth = fwidth(uv.y);
 float mask = smoothstep(threshold - edgeWidth, threshold + edgeWidth, uv.y);
 ```
+
 ---
 
 ### Visual demo
