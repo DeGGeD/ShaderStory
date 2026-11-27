@@ -30,11 +30,7 @@ Camera data exists too, but it belongs to view-dependent effects, not to physica
 
 The rule: **pick the smallest stable data path that satisfies the control.**
 
-- Painted or baked per-vertex, rarely changes → **vertex colors / UVs / custom streams** (masks, stiffness, pivot weights, phase offsets).
-- Artist-tuned for the whole material → **material properties** (amplitude, frequency, direction, noise scale).
-- Different for each placed object → **per-object / instanced data** (random seed, phase offset, bend multiplier).
-- Belongs to a shared system → **global shader properties** (wind, player position, impact points).
-- Large, or changing every frame → **buffers**, with the understanding that this adds setup and an extra memory read.
+Data that is painted or baked per vertex and rarely changes lives in **vertex colors, UVs, or custom streams**: masks, stiffness, pivot weights, phase offsets. Parameters an artist tunes for the whole material belong to **material properties**: amplitude, frequency, direction, noise scale. Anything that differs per placed object, like a random seed or a bend multiplier, wants **per-object or instanced data**. Values that belong to a shared system, wind or player position or impact points, are **global shader properties**. Only data that is large or changing every frame earns a **buffer**, at the cost of extra setup and an extra memory read.
 
 <p align="center">
 <img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/DataSources/DA_VertexAnim_DataSources_Figure_02.png" alt="Shader Story: Vertex Animation - Data Sources" title="Shader Story: Vertex Animation - Data Sources">
@@ -50,6 +46,14 @@ If UV2.x means pivot weight, vertex-color red means stiffness, and alpha means p
 
 ### Visual demo
 The same traveling wave, driven by data from each scope. Move the knobs: the property changes the whole material, the vertex color changes only where painted, the per-instance value changes only that object, and the global moves everything in agreement.
+
+And the production side of that demo, where the data actually comes from. This is the demo asset in the DCC: the source sculpt, the painted vertex-color influence, the same influence as raw per-vertex values in the data table, and a UV-space texture source on the right. Put the color view next to the table and the point lands. What reads as "a painted falloff" in the viewport is just four numbers per vertex, and the shader is only a decoder for whatever convention those numbers follow.
+
+<p align="center">
+<img src="https://github.com/DeGGeD/ShaderStory/blob/main/Resources/Images/Chapters/VertexAnimation/DataSources/DA_VertexAnim_DataSources_Sources_01.png" alt="Shader Story: Vertex Animation - Data Sources" title="Shader Story: Vertex Animation - Data Sources">
+</p>
+
+<p align="center"><em>The demo asset's motion data as authored: painted vertex colors, the same values as raw data, and the UV-space texture.</em></p>
 
 ---
 
