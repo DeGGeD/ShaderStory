@@ -13,6 +13,7 @@ float influence = color.a;  // baked per-vertex
 float phase = frac(_Time.y * _Speed + _PhaseOffset);  // artist-tuned property
 float3 wind = _WindDirectionWS;  // shared global, set from C#
 ```
+
 ---
 
 ### The data hierarchy
@@ -211,7 +212,7 @@ void Update()
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">

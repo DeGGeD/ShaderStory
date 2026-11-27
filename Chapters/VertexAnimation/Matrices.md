@@ -11,6 +11,7 @@
 ```hlsl
 float4x4 M = mul(T, mul(R, S));  // M * p applies S, then R, then T
 ```
+
 ---
 
 ### Reading the matrix
@@ -219,7 +220,7 @@ Shader "DecompiledArt/VertexAnimation/Matrices/Matrices"
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">

@@ -10,6 +10,7 @@
 float3 offsetOS = directionOS * amplitude * mask * sin(time * speed);
 positionOS += offsetOS;
 ```
+
 ---
 
 ### When the vertex stage is the right tool
@@ -32,11 +33,7 @@ One important condition: **the mesh has to be reasonable.** Cheap deformation on
 
 ### What the vertex stage gives you
 
-A well-built vertex stage setup can:
-
-- replace bones, baked clips, and CPU-side updates with one shared shader
-- drive *many* assets from a single material
-- source variation from masks, vertex colors, time offsets, wind, instance data, or gameplay parameters
+A well-built vertex stage setup can replace bones, baked clips, and CPU-side updates with one shared shader, drive *many* assets from a single material, and source variation from masks, vertex colors, time offsets, wind, instance data, or gameplay parameters.
 
 The cost model is simple and unforgiving: whatever math you write runs on **every vertex, in every pass, for every instance**. Measure at scene scale, with real density and real passes, never on a single hero asset.
 
@@ -179,7 +176,7 @@ Shader "DecompiledArt/VertexAnimation/Introduction/Introduction"
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
