@@ -2,7 +2,7 @@
 
 ## Patterns & Shapes: Value Noise
 
-> First described by Ken Perlin in 1983 as a simple random field.  
+> First described by Ken Perlin in 1983 as a simple random field.  
 In its core, its a function that assigns a single random value to each point on a lattice grid.  
 
 
@@ -18,7 +18,7 @@ In its core, its a function that assigns a single random value to each point on 
 | **Terrains** | Simple, repeatable details | 
 | **Textures Generation** | Repeated patterns that look natural |
 | **Clouds** | Fluffy shapes |
-| **Water** | Low‑frequency noise for calm waves; high‑frequency for foam |
+| **Water** | Low-frequency noise for calm waves; high-frequency for foam |
 | **Fire / Smoke** | Domain warping |
 | **Destruction masks** | Threshold the noise to create breakup or damage masks for VFX elements |
 
@@ -28,17 +28,17 @@ In its core, its a function that assigns a single random value to each point on 
 
 | Noise Type | Pros | Cons |
 |------------|------|------|
-| **Simplex** | • No grid‑like artifacts<br>• Faster on GPU (fewer samples)<br>• Built‑in tiling options | • Slightly more math per sample |
-| **Perlin** | • Familiar, easy to understand<br>• Works well for low‑poly art | • Visible square artefacts in high‑detail<br>• Slower on modern GPUs |
-| **Value** | • Cheap (hash + lerp)<br>• Good for low‑detail, stylised effects | • Rougher, less smooth transitions |
+| **Simplex** | • No grid-like artifacts<br>• Faster on GPU (fewer samples)<br>• Built-in tiling options | • Slightly more math per sample |
+| **Perlin** | • Familiar, easy to understand<br>• Works well for low-poly art | • Visible square artefacts in high-detail<br>• Slower on modern GPUs |
+| **Value** | • Cheap (hash + lerp)<br>• Good for low-detail, stylised effects | • Rougher, less smooth transitions |
 
 ---
 
 ### Performance Tips
-- **GPU vs CPU** - compute on the GPU whenever possible; a few texture lookups and linear interpolation are cheap.  
-- **Precision** - **float** is default; **half** can reduce detail at high frequencies.  
-- **Hash** - a simple integer hash (XOR + bitshift) runs faster than complex permutations and avoids branching.   
-- **Caching** - Re‑use the same lookups per frame if the noise is static.
+- **GPU vs CPU**: compute on the GPU whenever possible; a few texture lookups and linear interpolation are cheap.  
+- **Precision**: **float** is default; **half** can reduce detail at high frequencies.  
+- **Hash**: a simple integer hash (XOR + bitshift) runs faster than complex permutations and avoids branching.   
+- **Caching**: Re-use the same lookups per frame if the noise is static.
 
 ---
 
@@ -158,7 +158,7 @@ Shader "DecompiledArt/Patterns/Noise/Value/Value_2D"
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">

@@ -17,7 +17,7 @@
 | **Terrains** | Rocks, Cliffs. Distances create jagged edges | 
 | **Textures Generation** | Natural variation without seams. Mix with Perlin for smoother edges |
 | **Clouds** | Fluffy shapes |
-| **Water** | Bubble‑like distances; warp domains for waves |
+| **Water** | Bubble-like distances; warp domains for waves |
 | **Fire / Smoke** | Good for uneven flame fronts & turbulence |
 | **Destruction masks** | Good for distance thresholds |
 
@@ -29,17 +29,17 @@
 |---------|--------|--------|---------|
 | Noise type | Cell / distance | Gradient | Gradient |
 | Seamlessness | Easy with hash tiling | Needs special gradients | Needs special gradients |
-| GPU cost | Low (distance calcs) | Low‑medium | Medium |
+| GPU cost | Low (distance calcs) | Low-medium | Medium |
 | Visual feel | Cellular, jagged | Smooth, natural | Smooth, less directional |
 
 ---
 
 ### Performance Tips
-- **GPU vs CPU** - compute on the GPU whenever possible; a few texture lookups and linear interpolation are cheap.  
-- **CPU** - use to pre‑compute a small texture array of hash values.
-- **Precision** - **float** is default; **half** can reduce detail at high frequencies.  
-- **Hash**  - fast multiplicative hash is quick but lower quality.  
-- **Caching** - store grid indices as integers; convert to float only when needed. Use a texture lookup for hash tables on GPU.  
+- **GPU vs CPU**: compute on the GPU whenever possible; a few texture lookups and linear interpolation are cheap.  
+- **CPU**: use to pre-compute a small texture array of hash values.
+- **Precision**: **float** is default; **half** can reduce detail at high frequencies.  
+- **Hash**: fast multiplicative hash is quick but lower quality.  
+- **Caching**: store grid indices as integers; convert to float only when needed. Use a texture lookup for hash tables on GPU.  
 
 ---
 
@@ -187,7 +187,7 @@ Shader "DecompiledArt/Patterns/Noise/Worley/Worley_2D"
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">

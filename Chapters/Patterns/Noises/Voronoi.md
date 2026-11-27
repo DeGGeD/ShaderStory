@@ -19,17 +19,17 @@ Each cell is owned by a random point called a **seed**. All points closer to tha
 | **Terrains** | Coastlines, continental shapes, cave systems | 
 | **Textures Generation** | Stone, brick, tile patterns with sharp borders |
 | **Water** | Ripple patterns and shoreline detail |
-| **Fire / Smoke** | Good for irregular, blob‑like motion |
-| **Destruction masks** | Good for destructible pbjects' pre‑cut shapes |
+| **Fire / Smoke** | Good for irregular, blob-like motion |
+| **Destruction masks** | Good for destructible pbjects' pre-cut shapes |
 
 ---
 
 ### Performance Tips
-- **GPU** - use single‑instruction, multiple‑data loops.  
-- **CPU** - cache grid points per tile to avoid recomputing randomness.
-- **Precision** - **float** is default, but can drift at huge coordinates; **half** can reduce detail at high frequencies.  
-- **Hash**  - fast integer‑based hash (e.g., xorshift) is enough; avoid expensive float‑to‑int conversions.
-- **Sampling** - use linear filtering for cell centers, nearest for hard‑edge variants.  
+- **GPU**: use single-instruction, multiple-data loops.  
+- **CPU**: cache grid points per tile to avoid recomputing randomness.
+- **Precision**: **float** is default, but can drift at huge coordinates; **half** can reduce detail at high frequencies.  
+- **Hash**: fast integer-based hash (e.g., xorshift) is enough; avoid expensive float-to-int conversions.
+- **Sampling**: use linear filtering for cell centers, nearest for hard-edge variants.  
 
 ---
 
@@ -215,7 +215,7 @@ Shader "DecompiledArt/Patterns/Noise/Voronoi/Voronoi_2D"
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">

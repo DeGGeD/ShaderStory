@@ -3,7 +3,7 @@
 ## Patterns & Shapes: Simplex Noise
 
 > Ken Perlin created Simplex noise in 2001 to replace his earlier 1985 “Perlin noise.”  
-It fixes the grid‑like visual artifacts of older Perlin noise and runs faster on early GPUs.
+It fixes the grid-like visual artifacts of older Perlin noise and runs faster on early GPUs.
 
 
 <p align="center">
@@ -20,7 +20,7 @@ It fixes the grid‑like visual artifacts of older Perlin noise and runs faster 
 | **Clouds** | Fluffy shapes |
 | **Water** | Ripples & waves |
 | **Fire / Smoke** | Turbulence & domain warping |
-| **Destruction masks** | Noise‑driven masks for sharp edges |
+| **Destruction masks** | Noise-driven masks for sharp edges |
 
 ---
 
@@ -28,17 +28,17 @@ It fixes the grid‑like visual artifacts of older Perlin noise and runs faster 
 
 | Noise Type | Pros | Cons |
 |------------|------|------|
-| **Simplex** | • No grid‑like artifacts<br>• Faster on GPU (fewer samples)<br>• Built‑in tiling options | • Slightly more math per sample |
-| **Perlin** | • Familiar, easy to understand<br>• Works well for low‑poly art | • Visible square artefacts in high‑detail<br>• Slower on modern GPUs |
-| **Value** | • Cheap (hash + lerp)<br>• Good for low‑detail, stylised effects | • Rougher, less smooth transitions |
+| **Simplex** | • No grid-like artifacts<br>• Faster on GPU (fewer samples)<br>• Built-in tiling options | • Slightly more math per sample |
+| **Perlin** | • Familiar, easy to understand<br>• Works well for low-poly art | • Visible square artefacts in high-detail<br>• Slower on modern GPUs |
+| **Value** | • Cheap (hash + lerp)<br>• Good for low-detail, stylised effects | • Rougher, less smooth transitions |
 
 ---
 
 ### Performance Tips
-- **GPU vs CPU** - GPUs are massively parallel; evaluate noise in a fragment shader for full‑screen effects. On CPU, pre‑compute a small 2‑D texture (e.g., 256 × 256) and sample it with bilinear interpolation.  
-- **Precision** - **float** is default; **half** is for low‑detail layers.  
-- **Hash** - A simple integer hash (XOR & bit shifts) is fast. Avoid heavy math like sine or pow inside the loop.  
-- **Caching** - Re‑use the same gradient lookup table per frame if the noise is static.
+- **GPU vs CPU**: GPUs are massively parallel; evaluate noise in a fragment shader for full-screen effects. On CPU, pre-compute a small 2-D texture (e.g., 256 × 256) and sample it with bilinear interpolation.  
+- **Precision**: **float** is default; **half** is for low-detail layers.  
+- **Hash**: A simple integer hash (XOR & bit shifts) is fast. Avoid heavy math like sine or pow inside the loop.  
+- **Caching**: Re-use the same gradient lookup table per frame if the noise is static.
 
 ---
 
@@ -181,7 +181,7 @@ Shader "DecompiledArt/Patterns/Noise/Simplex/Simplex_2D"
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">

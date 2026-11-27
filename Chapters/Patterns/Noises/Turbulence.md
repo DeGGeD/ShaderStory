@@ -24,12 +24,12 @@
 ---
 
 ### Performance Tips
-- **GPU vs CPU** - compute on the GPU whenever possible; a few texture lookups and linear interpolation are cheap.  
-- **CPU** - use to pre‑compute a small texture array of hash values.
-- **Precision** - **float** is default; **half** on low-end devices.  
-- **Hash**  - Simple bit‑mixing (Xorshift) is fast; avoid expensive float conversions.  
-- **Caching** - Re‑use computed noise across shaders when possible.  
-- **Sampling** - Reduce texture resolution for distant objects; use mipmaps.  
+- **GPU vs CPU**: compute on the GPU whenever possible; a few texture lookups and linear interpolation are cheap.  
+- **CPU**: use to pre-compute a small texture array of hash values.
+- **Precision**: **float** is default; **half** on low-end devices.  
+- **Hash**: Simple bit-mixing (Xorshift) is fast; avoid expensive float conversions.  
+- **Caching**: Re-use computed noise across shaders when possible.  
+- **Sampling**: Reduce texture resolution for distant objects; use mipmaps.  
 
 ---
 
@@ -201,7 +201,7 @@ Shader "DecompiledArt/Patterns/Noise/Turbulence/Turbulence_2D"
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">

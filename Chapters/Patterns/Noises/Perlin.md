@@ -2,8 +2,8 @@
 
 ## Patterns & Shapes: Perlin Noise
 
-> Perlin noise is a smooth, pseudo‑random field created by interpolating gradients on a lattice. 
-It was first described in 1983 and was widely used in early 3D games such as *Quake* and *Half‑Life*.
+> Perlin noise is a smooth, pseudo-random field created by interpolating gradients on a lattice. 
+It was first described in 1983 and was widely used in early 3D games such as *Quake* and *Half-Life*.
 
 
 <p align="center">
@@ -31,7 +31,7 @@ It was first described in 1983 and was widely used in early 3D games such as *Qu
 | **Speed** | Moderate (many dot products) | Faster (fewer grid points) | Fastest (direct values) |
 | **Artifacts** | Faceted, directional bias | Reduced | None (might but too sharp) |
 | **Tiling** | Simple (wrap gradients) | More complex | Straightforward |
-| **Implementation Complexity** | Medium | Medium‑high | Low |
+| **Implementation Complexity** | Medium | Medium-high | Low |
 
 ---
 
@@ -183,7 +183,7 @@ Shader "DecompiledArt/Patterns/Noise/Perlin/Perlin_2D"
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
