@@ -5,10 +5,7 @@
 > The **Fresnel Lighting** describes how the amount of reflected light on a surface depends on the viewing angle.
 When looking directly at a surface (normal incidence), reflection is minimal. But when viewing at a grazing angle, reflection increases dramatically.
 
-This technique is widely used for:
-- **Rim lighting** in stylized or toon shading
-- Reflective materials like **glass**, **water**, or **polished metal**
-- **Highlighting silhouettes** and enhancing form readability
+This technique is widely used for **rim lighting** in stylized or toon shading, reflective materials like **glass**, **water**, or **polished metal**, and rim light on silhouettes to make form readable.
 
 ---
 
@@ -43,7 +40,7 @@ Complete per-vertex and per-pixel implementations, with detailed comments, are a
 
 ### Basic idea
 
-The Fresnel effect enhances how light interacts with surfaces viewed at glancing angles.
+The Fresnel effect changes how light interacts with surfaces viewed at glancing angles.
 Instead of relying only on direct lighting, it emphasizes the edges of objects, making them appear to “glow” or reflect more light as they turn away from the viewer.
 
 Technically, this is achieved by comparing the surface normal with the view direction **(dot(N, V))**.
@@ -58,10 +55,10 @@ As the viewing angle becomes shallower (the surface turns away), the factor incr
 
 Where:
 
-- **N·V** - dot product between the surface normal and view direction
-- **p** - Fresnel power, controls how sharp the rim appears
-- **i** - intensity, scales the overall brightness of the effect
-- **Tint** - per-material color parameter, tints the Fresnel glow
+- N·V: dot product between the surface normal and view direction
+- p: Fresnel power, controls how sharp the rim appears
+- i: intensity, scales the overall brightness of the effect
+- Tint: per-material color parameter, tints the Fresnel glow
 
 ---
 
@@ -73,7 +70,7 @@ Where:
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files and reference cheat-sheets.
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
@@ -84,4 +81,4 @@ If this article helped you, consider supporting the project on Patreon - you'll 
   </a>
 </p>
 
-Your support helps keep this library open, growing, and free for everyone.
+Your support helps keep this library open and free for everyone.

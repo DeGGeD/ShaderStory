@@ -44,11 +44,11 @@ Complete per-vertex and per-pixel implementations, with detailed comments, are a
 
 ### Basic idea
 
-- **Standard Lambert:** Computes diffuse as max(0, dot(N, L)). Back faces get zero light.
+- Standard Lambert: Computes diffuse as max(0, dot(N, L)). Back faces get zero light.
 
-- **Half-Lambert:** Shifts and normalizes the dot product with a wrap factor. This means that even when dot(N, L) is negative, the formula pushes values into the positive range. The result: a smooth falloff rather than a hard cutoff.
+- Half-Lambert: Shifts and normalizes the dot product with a wrap factor. This means that even when dot(N, L) is negative, the formula pushes values into the positive range. The result: a smooth falloff instead of a hard cutoff.
 
-- **Contrast control:** An exponent parameter adjusts how quickly the shading transitions between lit and unlit. Higher contrast yields sharper highlights, while lower contrast gives a softer gradient.
+- Contrast control: An exponent parameter adjusts how quickly the shading transitions between lit and unlit. Higher contrast yields sharper highlights, while lower contrast gives a softer gradient.
 
 This lighting model is especially useful in stylized rendering or cases where strict physical accuracy is less important than readability and softness.
 
@@ -65,12 +65,12 @@ This lighting model is especially useful in stylized rendering or cases where st
 > 
 
 Where:
-**N** - surface normal
-**L** - light direction
-**wrap** - defines how much to “push” lighting into the shadowed side (0 = standard Lambertian)
-**contrast** - controls the curve of the lighting falloff
-**attenuation** - handles distance/light falloff
-**LightColor** - main light’s color and intensity
+**N**: surface normal
+**L**: light direction
+**wrap**: defines how much to “push” lighting into the shadowed side (0 = standard Lambertian)
+**contrast**: controls the curve of the lighting falloff
+**attenuation**: handles distance/light falloff
+**LightColor**: main light’s color and intensity
 
 ---
 
@@ -82,7 +82,7 @@ Where:
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files and reference cheat-sheets.
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
@@ -93,4 +93,4 @@ If this article helped you, consider supporting the project on Patreon - you'll 
   </a>
 </p>
 
-Your support helps keep this library open, growing, and free for everyone.
+Your support helps keep this library open and free for everyone.

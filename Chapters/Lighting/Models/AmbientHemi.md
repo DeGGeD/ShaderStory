@@ -51,11 +51,9 @@ Complete per-vertex and per-pixel implementations, with detailed comments, are a
 
 ### Basic idea
 
-- **Ambient Lighting:**
-Represents global light coming from the environment, regardless of direction. It ensures all objects are lit to some degree, preventing harsh black shadows. In modern rendering, ambient light is often provided via Spherical Harmonics (SH), which captures low-frequency environment lighting.
+**Ambient lighting** represents global light coming from the environment, regardless of direction. It ensures all objects are lit to some degree, preventing harsh black shadows. In modern rendering, ambient light is often provided via spherical harmonics (SH), which captures low-frequency environment lighting.
 
-- **Hemi Lighting:**
-A simplified model for directional environmental light. It blends between two colors - sky and ground. They are based on the surface’s upward or downward orientation. Surfaces facing up receive more of the sky tint, while downward-facing surfaces receive more of the ground tint. This provides a natural gradient and emphasizes orientation relative to the environment.
+**Hemi lighting** is a simplified model for directional environmental light. It blends between two colors: sky and ground, based on the surface’s upward or downward orientation. Surfaces facing up receive more of the sky tint, while downward-facing surfaces receive more of the ground tint. This provides a natural gradient and emphasizes orientation relative to the environment.
 
 
 ### Equation
@@ -69,10 +67,10 @@ Hemi Lighting:
 > L_hemi = ((1 - m) x C_ground + m x C_sky) * P
 
 where:
-- **m** = remap(n.y, -1, 1, 0, 1) ^ contrast
-- **n.y** - Y-component of the surface normal
-- **C_ground**, **C_sky** - sky/ground tint colors
-- **P** - global intensity
+- m = remap(n.y, -1, 1, 0, 1) ^ contrast
+- n.y: Y-component of the surface normal
+- C_ground, **C_sky**: sky/ground tint colors
+- P: global intensity
 
 Final Color:
 > C_out = C_base * saturate(L_ambient + L_hemi)
@@ -89,7 +87,7 @@ Keep in mind that Ambient and Hemi lighting are not complete lighting models. Th
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files and reference cheat-sheets.
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
@@ -100,4 +98,4 @@ If this article helped you, consider supporting the project on Patreon - you'll 
   </a>
 </p>
 
-Your support helps keep this library open, growing, and free for everyone.
+Your support helps keep this library open and free for everyone.

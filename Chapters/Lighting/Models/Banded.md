@@ -3,7 +3,7 @@
 ## Lighting Models : Banded
 
 > **Banded lighting** (also known as **cel lighting**) quantizes smooth lighting into discrete brightness bands.
-Instead of a continuous gradient from light to dark, you are able to get the distinct “steps”. Its a common technique in e.g. comic rendering.
+Instead of a continuous gradient from light to dark, you get distinct “steps”. It’s a common technique in e.g. comic rendering.
 
 It’s one of the simplest yet most effective ways to give 3D objects a hand-painted, non-photorealistic feel.
 
@@ -45,19 +45,13 @@ Complete implementation, with detailed comments, is available on [Patreon](https
 
 Banded lighting takes smooth shading (like Lambert) and breaks it into a few flat tones. Commonly applied technique, just like in cartoon or cel-shaded art.
 
-It starts with regular lighting:
-- Calculate how much the surface faces the light using the dot product (N · L). This gives a smooth gradient from bright to dark.
+It starts with regular lighting: a dot product (N · L) measures how much the surface faces the light, giving a smooth gradient from bright to dark.
 
-Then, gradient should be turned into bands:
-- Instead of keeping it smooth, the brightness is "quantized" - rounding it down into a few fixed levels.
+Then the gradient is turned into bands: instead of keeping it smooth, the brightness is "quantized", rounded down into a few fixed levels.
 
-Control the smoothness:
-- TDedicated properties define how many bands appear and how wide each one is.
-More steps = smoother look.
-Fewer steps = bold, stylized shading.
+Dedicated properties control the smoothness: they define how many bands appear and how wide each one is. More steps give a smoother look; fewer steps give bold, stylized shading.
 
-(Optionally) Bands offset applied:
-- The half-step factor shifts the light bands slightly, helping to center them and avoid harsh transitions.
+Optionally, a half-step factor shifts the light bands slightly, helping to center them and avoid harsh transitions.
 
 
 ### Equation
@@ -66,10 +60,10 @@ Fewer steps = bold, stylized shading.
 
 Where:
 
-- **N · L** - Lambertian diffuse
-- **s** - lighting step size (smoothness)
-- **a** - additive offset (half-step factor toggle)
-- **n** - number of light bands
+- N · L: Lambertian diffuse
+- s: lighting step size (smoothness)
+- a: additive offset (half-step factor toggle)
+- n: number of light bands
 
 This quantized diffuse factor replaces the smooth falloff used in traditional Lambert or Blinn-Phong lighting.
 
@@ -83,7 +77,7 @@ This quantized diffuse factor replaces the smooth falloff used in traditional La
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files and reference cheat-sheets.
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
@@ -94,4 +88,4 @@ If this article helped you, consider supporting the project on Patreon - you'll 
   </a>
 </p>
 
-Your support helps keep this library open, growing, and free for everyone.
+Your support helps keep this library open and free for everyone.

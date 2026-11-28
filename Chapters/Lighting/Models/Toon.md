@@ -6,9 +6,7 @@
 
 Instead of smoothly interpolating light intensity, toon shading quantizes lighting into bands.
 
-Top usage scenarios:
-- **illustrated look** commonly seen in anime
-- **stylized** games
+Top usage scenarios: the **illustrated look** commonly seen in anime, and other **stylized** games.
 
 ---
 
@@ -92,13 +90,13 @@ Complete implementation, with detailed comments, is available on [Patreon](https
 
 Instead of treating light as a smooth physical phenomenon, toon lighting reinterprets lighting as a set of discrete visual components:
 
-- **The diffuse term (N·L)** is represented by a narrow range and then pushed through a threshold. That was turning gradual shading into distinct lit and shadowed areas.
+- The diffuse term (N·L) is represented by a narrow range and pushed through a threshold, turning gradual shading into distinct lit and shadowed areas.
 
-- **Ambient lighting** component is handled separately using hemisphere lighting and ambient color. That ensures the object never falls completely into black and also provides additional control over lit areas.
+- The ambient component is handled separately with hemisphere lighting and an ambient color, so the object never falls completely into black, with extra control over lit areas.
 
-- **Specular highlights** represented by somewhat binary shapes/regions. Their appearance is driven by a sharp "condition" is met.
+- Specular highlights appear as somewhat binary shapes or regions. Their presence is driven by a sharp condition: a threshold that is either met or not.
 
-- **Fresnel** is used as a rim accent. Its not a physically accurate reflection, but helps the silhouette to pop against the background.
+- Fresnel is used as a rim accent. It is not a physically accurate reflection, but it helps the silhouette pop against the background.
 
 
 ### Toon Lighting Equation
@@ -115,13 +113,13 @@ Instead of treating light as a smooth physical phenomenon, toon lighting reinter
 
 Where:
 
-- **N, L, V, H** - normal vector, light, view, and half vectors
-- **R_min, R_max** - toon ramp thresholds
-- **k_d, k_s, k_h, k_f** - intensity factors
-- **C_s** - specular color
-- **Ground, Sky** - hemisphere lighting tintings
-- **g** - specular gloss exponent
-- **p** - Fresnel contribution
+- N, L, V, H: normal vector, light, view, and half vectors
+- R_min, R_max: toon ramp thresholds
+- k_d, k_s, k_h, k_f: intensity factors
+- C_s: specular color
+- Ground, Sky: hemisphere lighting tintings
+- g: specular gloss exponent
+- p: Fresnel contribution
 
 ---
 
@@ -133,7 +131,7 @@ Where:
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files and reference cheat-sheets.
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
@@ -144,4 +142,4 @@ If this article helped you, consider supporting the project on Patreon - you'll 
   </a>
 </p>
 
-Your support helps keep this library open, growing, and free for everyone.
+Your support helps keep this library open and free for everyone.

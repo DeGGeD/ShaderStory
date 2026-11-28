@@ -2,7 +2,7 @@
 
 ## Lighting Models : Image-Based Lighting (IBL)
 
-> **Image-Based Lighting (IBL)** simulates real-world reflections and ambient lighting using environment maps rather than relying solely on direct lights.
+> **Image-Based Lighting (IBL)** simulates real-world reflections and ambient lighting using environment maps instead of relying solely on direct lights.
 
 Instead of computing lighting only from light sources, IBL samples a cubemap texture representing the surrounding environment, capturing diffuse and specular reflections from it.
 
@@ -52,14 +52,14 @@ Complete per-vertex and per-pixel implementations, with detailed comments, are a
 
 ### Basic idea
 
-Light doesn’t only come from direct light sources, the world around emits ambient light as well.
+Light doesn’t only come from direct light sources: the world around emits ambient light as well.
 
-With IBL, surrounding light is captured using a **cubemap** (like a **panoramic HDR image**) and use it to light the surface.
+With IBL, surrounding light is captured using a **cubemap** (like a **panoramic HDR image**) and used to light the surface.
 
-- The shading method **first calculates standard Blinn-Phong lighting** for base diffuse and specular terms.
-- Then, **reflection vector is computed** based on the view and surface normal.
-- That **reflection vector is used to sample the environment cubemap**, fetching a color that represents what the object “sees” in that direction.
-- Finally, **it blends this reflection with the Blinn-Phong specular result** based on an IBL influence factor.
+1. The shading method **first calculates standard Blinn-Phong lighting** for base diffuse and specular terms.
+2. Then, **a reflection vector is computed** from the view and surface normal.
+3. That **reflection vector samples the environment cubemap**, fetching the color the object “sees” in that direction.
+4. Finally, **the reflection blends with the Blinn-Phong specular result** according to an IBL influence factor.
 
 
 ### Image-Based Lighting Equation
@@ -68,13 +68,13 @@ With IBL, surrounding light is captured using a **cubemap** (like a **panoramic 
 
 Where:
 
-- **N·L** - diffuse light contribution
-- **D** - diffuse factor
-- **L_i** - light color
-- **S** - Blinn-Phong specular contribution
-- **R** - reflection vector (reflect(-V, N))
-- **T(R)** - cubemap texture sample using reflection direction
-- **I** - IBL influence factor (0 → classic Blinn-Phong, 1 → fully IBL-driven)
+- N·L: diffuse light contribution
+- D: diffuse factor
+- L_i: light color
+- S: Blinn-Phong specular contribution
+- R: reflection vector (reflect(-V, N))
+- T(R): cubemap texture sample using reflection direction
+- I: IBL influence factor (0 → classic Blinn-Phong, 1 → fully IBL-driven)
 
 ---
 
@@ -86,7 +86,7 @@ Where:
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files and reference cheat-sheets.
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
@@ -97,4 +97,4 @@ If this article helped you, consider supporting the project on Patreon - you'll 
   </a>
 </p>
 
-Your support helps keep this library open, growing, and free for everyone.
+Your support helps keep this library open and free for everyone.

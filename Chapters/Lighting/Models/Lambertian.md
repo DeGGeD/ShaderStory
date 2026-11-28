@@ -4,7 +4,7 @@
 
 > Lambertian lighting, named after Johann Heinrich Lambert, is one of the most fundamental and widely used models for diffuse reflection in computer graphics.
 
-It works on the principle that light striking a surface is scattered evenly in all directions - perfect for matte materials such as **chalk**, **clay**, **unpolished stone**, etc.
+It works on the principle that light striking a surface is scattered evenly in all directions, perfect for matte materials such as **chalk**, **clay**, **unpolished stone**, etc.
 
 Its strength lies in its simplicity: brightness depends only on the cosine of the angle between the surface normal and the incoming light direction. This is known as Lambert’s Cosine Law.
 
@@ -66,11 +66,6 @@ Diffuse light contribution also decreases with distance, following the light’s
 
 > d = Σ (from i=0 to n) [ intensity(light_i) × diffuse(material_property) × attenuation(light_i) × max(0, N · L) ]
 
-- Summation over all incident light sources
-- Surface diffuse property (material roughness, 0 → black / 1 → full reflection)
-- Light attenuation (distance and shadow falloff)
-- Cosine factor max(0, dot(N,L))
-
 The final diffuse **d** is computed as the **sum over all lights of their intensity**, the surface’s **diffuse material property**, **light attenuation**, and the **Lambertian cosine factor max(0, N·L)**. It ensures that light contributes proportionally to how directly it strikes the surface.
 
 ---
@@ -83,7 +78,7 @@ The final diffuse **d** is computed as the **sum over all lights of their intens
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files and reference cheat-sheets.
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
@@ -94,4 +89,4 @@ If this article helped you, consider supporting the project on Patreon - you'll 
   </a>
 </p>
 
-Your support helps keep this library open, growing, and free for everyone.
+Your support helps keep this library open and free for everyone.

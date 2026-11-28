@@ -55,23 +55,22 @@ Each lighting value (or color channel) is used as a coordinate to fetch precompu
 This allows to fine-tune the lighting output. Without the actual lighting setup change it's possible to set the tone remapping to stylize the project visuals.
 
 Typical workflow:
-- Compute lighting normally (e.g., Blinn-Phong, Lambertian, etc.)
-- Use lighting color or intensity as input to a LUT texture
-- Sample LUT and blend results with the original lighting
-- Adjust blending strength to control stylization
+
+1. Compute lighting normally (e.g., Blinn-Phong, Lambertian, etc.)
+2. Use the lighting color or intensity as input to a LUT texture
+3. Sample the LUT and blend the result with the original lighting
+4. Adjust the blending strength to control stylization
 
 
-### Image-Based Lighting Equation
+### LUT Equation
 
 > C_output = lerp(C_in, T(C_in) × C_in, α)
 
 Where:
 
-Where:
-
-- **C_in** - input lighting color
-- **T(C_in)** - texture lookup from LUT
-- **α** - LUT blending factor (transition control)
+- C_in: input lighting color
+- T(C_in): texture lookup from LUT
+- α: LUT blending factor (transition control)
 
 ---
 
@@ -83,7 +82,7 @@ Where:
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files and reference cheat-sheets.
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
@@ -94,4 +93,4 @@ If this article helped you, consider supporting the project on Patreon - you'll 
   </a>
 </p>
 
-Your support helps keep this library open, growing, and free for everyone.
+Your support helps keep this library open and free for everyone.
