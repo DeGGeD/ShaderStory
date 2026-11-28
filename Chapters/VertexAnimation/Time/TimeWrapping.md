@@ -10,6 +10,7 @@
 half angle = frac(_Time.y * _Speed) * TWO_PI;  // bounded, repeating 0..2π
 half wave = sin(angle);
 ```
+
 ---
 
 ### Why wrap
@@ -180,7 +181,7 @@ Shader "DecompiledArt/VertexAnimation/Time/TimeWrapping/TimeWrapping"
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
