@@ -57,23 +57,23 @@ The **texture** itself **encodes precomputed lighting** and **reflection informa
 
 Because the lookup depends on the view-space normal, the **shading automatically reacts to camera movement**, mimicking real reflection behavior without actual scene lighting.
 
-This **approach completely bypasses dynamic lights, shadows, or specular calculations** - it’s effectively image-based lighting, but baked into a 2D texture.
+This **approach completely bypasses dynamic lights, shadows, or specular calculations**. It’s effectively image-based lighting, but baked into a 2D texture.
 
 
-### Minnaert Equation
+### Matcap Equation
 
-> d = T(N_v​.xy​ / 2 + 0.5) ^ γ x b x Tint
+> d = T(N_v.xy / 2 + 0.5) ^ γ x b x Tint
 
 Where:
 
-- **N_v**​ - surface normal. Transformed into view space
-- **T(UV)** - matcap texture sample
-- **γ** - contrast exponent
-- **b** - brightness factor
-- **Tint** - per-material color parameter
+- N_v: surface normal. Transformed into view space
+- T(UV): matcap texture sample
+- γ: contrast exponent
+- b: brightness factor
+- Tint: per-material color parameter
 
 ---
-Matcap shading proves that simple ideas can deliver stunning results. With just one texture, you can fake complex lighting, reflections, and material depth. It’s fast, flexible, and perfect for stylized rendering.
+Matcap shading shows that a single texture can fake complex lighting, reflections, and material depth. It is fast and flexible, and it fits stylized rendering.
 
 This lighting model remains one of the most elegant tricks in a technical artist’s toolbox. Sometimes, less really is more.
 
@@ -88,7 +88,7 @@ This lighting model remains one of the most elegant tricks in a technical artist
 
 ## ❤️ Support Shader Story
 
-If this article helped you, consider supporting the project on Patreon - you'll get access to the related source files, reference cheat-sheets, and other exclusive resources:
+If this article helped you, consider supporting the project on Patreon: you'll get access to the related source files and reference cheat-sheets.
 
 <p align="center">
   <a href="https://www.patreon.com/decompiled_art" target="_blank">
@@ -99,4 +99,4 @@ If this article helped you, consider supporting the project on Patreon - you'll 
   </a>
 </p>
 
-Your support helps keep this library open, growing, and free for everyone.
+Your support helps keep this library open and free for everyone.
